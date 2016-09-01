@@ -1,96 +1,63 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/* @author SOFTWARE III */
+import br.edu.ifpi.capar.para.poucos.generico.EntidadeGenerica;
 
-public class Evento {
-    private int idEvento;
-    private String nomeEvento;
-    private String dataEvento;
+/* @author SOFTWARE III */
+public class Evento extends EntidadeGenerica{
+
+    private String nome;
+    private String data;
     private int horario;
     private int idadeMinima;
     private int tipo;
+    private boolean aceitarInstituicao;
 
-    /**
-     * @return the idEvento
-     */
-    public int getIdEvento() {
-        return idEvento;
+    public String getNome() {
+        return nome;
     }
 
-    /**
-     * @param idEvento the idEvento to set
-     */
-    public void setIdEvento(int idEvento) {
-        this.idEvento = idEvento;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    /**
-     * @return the nomeEvento
-     */
-    public String getNomeEvento() {
-        return nomeEvento;
+    public String getData() {
+        return data;
     }
 
-    /**
-     * @param nomeEvento the nomeEvento to set
-     */
-    public void setNomeEvento(String nomeEvento) {
-        this.nomeEvento = nomeEvento;
+    public void setData(String data) {
+        this.data = data;
     }
 
-    /**
-     * @return the dataEvento
-     */
-    public String getDataEvento() {
-        return dataEvento;
-    }
-
-    /**
-     * @param dataEvento the dataEvento to set
-     */
-    public void setDataEvento(String dataEvento) {
-        this.dataEvento = dataEvento;
-    }
-
-    /**
-     * @return the horario
-     */
     public int getHorario() {
         return horario;
     }
 
-    /**
-     * @param horario the horario to set
-     */
     public void setHorario(int horario) {
         this.horario = horario;
     }
 
-    /**
-     * @return the idadeMinima
-     */
     public int getIdadeMinima() {
         return idadeMinima;
     }
 
-    /**
-     * @param idadeMinima the idadeMinima to set
-     */
     public void setIdadeMinima(int idadeMinima) {
         this.idadeMinima = idadeMinima;
     }
 
-    /**
-     * @return the tipo
-     */
     public int getTipo() {
         return tipo;
     }
 
-    /**
-     * @param tipo the tipo to set
-     */
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
+
+    public boolean isAceitarInstituicao() {
+        return aceitarInstituicao;
+    }
+
+    public void setAceitarInstituicao(boolean aceitarInstituicao) {
+        this.aceitarInstituicao = aceitarInstituicao;
+    }
+
 }

@@ -1,13 +1,19 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/* @author SOFTWARE III */
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-public class Participante {
+/* @author SOFTWARE III */
+@Entity
+public class Participante implements Serializable{
+    @Id
+    private int id;
     private int cpf;
     private int rg;
     private int idade;
     private String nome;
-
+    private String sexo;
  
     public int getCpf() {
         return cpf;
