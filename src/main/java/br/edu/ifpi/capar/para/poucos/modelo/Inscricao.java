@@ -3,15 +3,15 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 /* @author SOFTWARE III */
 
 public class Inscricao {
-    private int numInscricao;
+    private int numero;
     private int codParticipante;
 
-    public int getNumInscricao() {
-        return numInscricao;
+    public int getNumero() {
+        return numero;
     }
 
-    public void setNumInscricao(int numInscricao) {
-        this.numInscricao = numInscricao;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
     public int getCodParticipante() {

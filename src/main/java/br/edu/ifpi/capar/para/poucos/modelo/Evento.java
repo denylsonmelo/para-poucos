@@ -3,93 +3,57 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 /* @author SOFTWARE III */
 
 public class Evento {
-    private int idEvento;
-    private String nomeEvento;
-    private String dataEvento;
+    private int codigo;
+    private String nome;
+    private String data;
     private int horario;
     private int idadeMinima;
     private int tipo;
 
-    /**
-     * @return the idEvento
-     */
-    public int getIdEvento() {
-        return idEvento;
+    public int getCodigo() {
+        return codigo;
     }
 
-    /**
-     * @param idEvento the idEvento to set
-     */
-    public void setIdEvento(int idEvento) {
-        this.idEvento = idEvento;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
-    /**
-     * @return the nomeEvento
-     */
-    public String getNomeEvento() {
-        return nomeEvento;
+    public String getNome() {
+        return nome;
     }
 
-    /**
-     * @param nomeEvento the nomeEvento to set
-     */
-    public void setNomeEvento(String nomeEvento) {
-        this.nomeEvento = nomeEvento;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    /**
-     * @return the dataEvento
-     */
-    public String getDataEvento() {
-        return dataEvento;
+    public String getData() {
+        return data;
     }
 
-    /**
-     * @param dataEvento the dataEvento to set
-     */
-    public void setDataEvento(String dataEvento) {
-        this.dataEvento = dataEvento;
+    public void setData(String data) {
+        this.data = data;
     }
-
-    /**
-     * @return the horario
-     */
+    
     public int getHorario() {
         return horario;
     }
 
-    /**
-     * @param horario the horario to set
-     */
     public void setHorario(int horario) {
         this.horario = horario;
     }
 
-    /**
-     * @return the idadeMinima
-     */
     public int getIdadeMinima() {
         return idadeMinima;
     }
-
-    /**
-     * @param idadeMinima the idadeMinima to set
-     */
+    
     public void setIdadeMinima(int idadeMinima) {
         this.idadeMinima = idadeMinima;
     }
 
-    /**
-     * @return the tipo
-     */
     public int getTipo() {
         return tipo;
     }
 
-    /**
-     * @param tipo the tipo to set
-     */
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }

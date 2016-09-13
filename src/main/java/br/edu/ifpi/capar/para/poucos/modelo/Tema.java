@@ -3,24 +3,24 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 /* @author SOFTWARE III */
 
 public class Tema {
-    private int CodTema;
-    private String nomeTema;
+    private int codigo;
+    private String nome;
     private String descricao;
 
-    public int getCodTema() {
-        return CodTema;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setCodTema(int CodTema) {
-        this.CodTema = CodTema;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
-    public String getNomeTema() {
-        return nomeTema;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomeTema(String nomeTema) {
-        this.nomeTema = nomeTema;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getDescricao() {

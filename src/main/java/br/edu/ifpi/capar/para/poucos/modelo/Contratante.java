@@ -3,6 +3,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 /* @author SOFTWARE III */
 
 public class Contratante {
+    private int id;
     private int cpf;
     private String nome;
     private String endereco;
@@ -29,5 +30,13 @@ public class Contratante {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+    
+    public int getId() {
+        return id;
+    }
+    
+    public void setId(int id) {
+        this.id = id;
     }
 }

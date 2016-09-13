@@ -3,18 +3,18 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 /* @author SOFTWARE III */
 
 public class Organizador {
-    private int cpfOrganizador;
+    private int cpf;
     private int contato;
-    private String nomeOrganizador;
+    private String nome;
     private String agencia;
     private String email;
 
-    public int getCpfOrganizador() {
-        return cpfOrganizador;
+    public int getCpf() {
+        return cpf;
     }
 
-    public void setCpfOrganizador(int cpfOrganizador) {
-        this.cpfOrganizador = cpfOrganizador;
+    public void setCpf(int cpf) {
+        this.cpf = cpf;
     }
 
     public int getContato() {
@@ -25,12 +25,12 @@ public class Organizador {
         this.contato = contato;
     }
 
-    public String getNomeOrganizador() {
-        return nomeOrganizador;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomeOrganizador(String nomeOrganizador) {
-        this.nomeOrganizador = nomeOrganizador;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getAgencia() {

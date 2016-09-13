@@ -3,28 +3,28 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 /* @author SOFTWARE III */
 
 public class Local {
-    private int idLocal;
-    private String nomeLocal;
+    private int codigo;
+    private String nome;
     private int capacidade;
     private String cidade;
     private String estado;
     private String rua;
     private int numero;
 
-    public int getIdLocal() {
-        return idLocal;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public void setIdLocal(int idLocal) {
-        this.idLocal = idLocal;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
-    public String getNomeLocal() {
-        return nomeLocal;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomeLocal(String nomeLocal) {
-        this.nomeLocal = nomeLocal;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getCapacidade() {
