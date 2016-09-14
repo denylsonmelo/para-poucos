@@ -14,7 +14,6 @@ public class Evento extends EntidadeGenerica{
     private int horario;
     private int idadeMinima;
     private int tipo;
-    private boolean aceitarInstituicao;
 
     /**Método que retorna o nome do evento
      * 
@@ -39,7 +38,7 @@ public class Evento extends EntidadeGenerica{
     public void setData(String data) {
         this.data = data;
     }
-
+    
     public int getHorario() {
         return horario;
     }
@@ -51,7 +50,7 @@ public class Evento extends EntidadeGenerica{
     public int getIdadeMinima() {
         return idadeMinima;
     }
-
+    
     public void setIdadeMinima(int idadeMinima) {
         this.idadeMinima = idadeMinima;
     }
@@ -63,13 +62,4 @@ public class Evento extends EntidadeGenerica{
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
-
-    public boolean isAceitarInstituicao() {
-        return aceitarInstituicao;
-    }
-
-    public void setAceitarInstituicao(boolean aceitarInstituicao) {
-        this.aceitarInstituicao = aceitarInstituicao;
-    }
-
 }
