@@ -1,16 +1,22 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-import br.edu.ifpi.capar.para.poucos.generico.EntidadeGenerica;
-
 /* @author SOFTWARE III */
-public class Evento extends EntidadeGenerica{
 
+public class Evento {
+    private int id;
     private String nome;
     private String data;
     private int horario;
     private int idadeMinima;
     private int tipo;
-    private boolean aceitarInstituicao;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNome() {
         return nome;
@@ -27,7 +33,7 @@ public class Evento extends EntidadeGenerica{
     public void setData(String data) {
         this.data = data;
     }
-
+    
     public int getHorario() {
         return horario;
     }
@@ -39,7 +45,7 @@ public class Evento extends EntidadeGenerica{
     public int getIdadeMinima() {
         return idadeMinima;
     }
-
+    
     public void setIdadeMinima(int idadeMinima) {
         this.idadeMinima = idadeMinima;
     }
@@ -51,13 +57,4 @@ public class Evento extends EntidadeGenerica{
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
-
-    public boolean isAceitarInstituicao() {
-        return aceitarInstituicao;
-    }
-
-    public void setAceitarInstituicao(boolean aceitarInstituicao) {
-        this.aceitarInstituicao = aceitarInstituicao;
-    }
-
 }
