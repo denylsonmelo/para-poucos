@@ -2,7 +2,11 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 
 import br.edu.ifpi.capar.para.poucos.generico.EntidadeGenerica;
 
-/* @author SOFTWARE III */
+/**Classe que faz especificação de evento
+ * 
+ * @author Denylson Melo
+ * @author Lucas Fontenele
+ */
 public class Evento extends EntidadeGenerica{
 
     private String nome;
@@ -12,10 +16,18 @@ public class Evento extends EntidadeGenerica{
     private int tipo;
     private boolean aceitarInstituicao;
 
+    /**Método que retorna o nome do evento
+     * 
+     * @return Retorna o nome completo do evento
+     */
     public String getNome() {
         return nome;
     }
 
+    /**Método que seta o nome do evento
+     * 
+     * @param nome O nome do evento propriamente dito
+     */
     public void setNome(String nome) {
         this.nome = nome;
     }
