@@ -1,7 +1,7 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /* @author SOFTWARE III */
-
+/* @author Gregorio Magno*/
 public class Contratante {
     private int cpf;
     private String nome;

@@ -1,6 +1,7 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /* @author SOFTWARE III */
+/* @author Gregorio Magno */
 
 public class Evento {
     private int idEvento;
