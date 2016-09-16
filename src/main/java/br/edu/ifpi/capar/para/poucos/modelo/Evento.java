@@ -4,8 +4,7 @@ import br.edu.ifpi.capar.para.poucos.generico.EntidadeGenerica;
 
 /**Classe que faz especificação de evento
  * 
- * @author Denylson Melo
- * @author Lucas Fontenele
+ * @author Diovanna Araujo
  */
 public class Evento extends EntidadeGenerica{
 

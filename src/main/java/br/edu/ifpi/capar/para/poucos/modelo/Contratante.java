@@ -1,6 +1,6 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/* @author SOFTWARE III */
+/* @author Diovanna Araujo */
 
 public class Contratante {
     private int id;
