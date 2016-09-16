@@ -1,6 +1,9 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/* @author SOFTWARE III */
+/**
+ * 
+ * @author Lucas Rafael
+ */
 
 public class Organizador {
     private int id;
