@@ -1,6 +1,9 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/* @author SOFTWARE III */
+/**
+ * 
+ * @author Ramon josé
+ */
 
 public class Tema {
     private int id;
