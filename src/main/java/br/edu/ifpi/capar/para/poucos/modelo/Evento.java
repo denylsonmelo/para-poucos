@@ -7,6 +7,7 @@ import br.edu.ifpi.capar.para.poucos.generico.EntidadeGenerica;
  * @author Denylson Melo
  * @author Lucas Fontenele
  */
+/* @author Jean Junior*/
 public class Evento extends EntidadeGenerica{
 
     private String nome;

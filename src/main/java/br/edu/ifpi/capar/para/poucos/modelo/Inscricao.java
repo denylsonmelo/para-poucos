@@ -1,7 +1,7 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /* @author SOFTWARE III */
-
+/* @author Jean Junior*/
 public class Inscricao {
     private int numero;
     private int codParticipante;
