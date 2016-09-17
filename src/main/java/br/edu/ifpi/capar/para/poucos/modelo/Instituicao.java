@@ -7,7 +7,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 
 /**
  *
- * @author Diovanna Araujo
+ * @author Denylson Melo
  */
 public class Instituicao {
     
