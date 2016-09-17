@@ -1,26 +1,34 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
+<<<<<<< HEAD
 /* @author SOFTWARE III */
 /* @author Gregorio Magno */
+=======
+/**
+ * 
+ * @author Lucas Rafael
+ */
+
+>>>>>>> 909c1c5eeeac401e1e342c250a75c6269e2c17ba
 public class Tema {
-    private int CodTema;
-    private String nomeTema;
+    private int id;
+    private String nome;
     private String descricao;
 
-    public int getCodTema() {
-        return CodTema;
+    public int getId() {
+        return id;
     }
 
-    public void setCodTema(int CodTema) {
-        this.CodTema = CodTema;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getNomeTema() {
-        return nomeTema;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomeTema(String nomeTema) {
-        this.nomeTema = nomeTema;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getDescricao() {

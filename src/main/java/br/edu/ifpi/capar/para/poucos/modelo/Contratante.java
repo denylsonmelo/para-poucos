@@ -1,8 +1,15 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/* @author SOFTWARE III */
-/* @author Gregorio Magno*/
+/**Classe que faz especificação de Contratante
+ * 
+ * @author Denylson Melo
+ * @author Lucas Fontenele
+ * @author Lucas Rafael
+ * @author Gregorio Magno
+ */
+
 public class Contratante {
+    private int id;
     private int cpf;
     private String nome;
     private String endereco;
@@ -29,5 +36,13 @@ public class Contratante {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+    
+    public int getId() {
+        return id;
+    }
+    
+    public void setId(int id) {
+        this.id = id;
     }
 }

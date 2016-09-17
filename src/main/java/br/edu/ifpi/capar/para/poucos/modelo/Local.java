@@ -1,30 +1,37 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/* @author SOFTWARE III */
-/* @author Gregorio Magno */
+/**Classe que faz especificação de Local
+ * 
+ * @author Denylson Melo
+ * @author Lucas Fontenele
+ * @author Lucas Rafael
+ * @author Gregorio Magno
+ */
+
+
 public class Local {
-    private int idLocal;
-    private String nomeLocal;
+    private int id;
+    private String nome;
     private int capacidade;
     private String cidade;
     private String estado;
     private String rua;
     private int numero;
 
-    public int getIdLocal() {
-        return idLocal;
+    public int getId() {
+        return id;
     }
 
-    public void setIdLocal(int idLocal) {
-        this.idLocal = idLocal;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getNomeLocal() {
-        return nomeLocal;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomeLocal(String nomeLocal) {
-        this.nomeLocal = nomeLocal;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getCapacidade() {

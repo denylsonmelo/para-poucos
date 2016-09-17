@@ -1,8 +1,12 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/* @author SOFTWARE III */
-/* @author Gregorio Magno */
-
+/**Classe que faz especificação de evento
+ * 
+ * @author Denylson Melo
+ * @author Lucas Fontenele
+ * @author Lucas Rafael
+ * @author Gregorio Magno
+ */
 public class Evento {
     private int idEvento;
     private String nomeEvento;

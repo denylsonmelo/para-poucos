@@ -1,8 +1,17 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
+<<<<<<< HEAD
 /* @author SOFTWARE III */
 /* @author Gregorio Magno */
+=======
+/**
+ * 
+ * @author Lucas Rafael
+ */
+
+>>>>>>> 909c1c5eeeac401e1e342c250a75c6269e2c17ba
 public class Participante {
+    private int id;
     private int cpf;
     private int rg;
     private int idade;
@@ -39,5 +48,19 @@ public class Participante {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
 }
