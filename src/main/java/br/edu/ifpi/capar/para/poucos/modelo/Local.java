@@ -1,6 +1,8 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/* @author SOFTWARE III */
+/**
+ * @author Lucas Fontenele
+ */
 
 public class Local {
     private int id;
