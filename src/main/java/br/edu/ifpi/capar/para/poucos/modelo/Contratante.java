@@ -1,6 +1,6 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/* @author SOFTWARE III */
+/* @author SOFTWARE III -@author Arllayne Carvalho */
 
 public class Contratante {
     private int id;
