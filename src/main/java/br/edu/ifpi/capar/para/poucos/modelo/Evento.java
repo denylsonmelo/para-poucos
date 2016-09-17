@@ -1,7 +1,7 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /* @author SOFTWARE III */
-
+/* @author Ana Flavia*/
 public class Evento {
     private int idEvento;
     private String nomeEvento;

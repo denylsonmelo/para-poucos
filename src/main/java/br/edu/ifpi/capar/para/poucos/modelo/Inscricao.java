@@ -1,7 +1,7 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /* @author SOFTWARE III */
-
+/* @author Ana Flavia*/
 public class Inscricao {
     private int numInscricao;
     private int codParticipante;

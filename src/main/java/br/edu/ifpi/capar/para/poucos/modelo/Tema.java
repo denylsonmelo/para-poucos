@@ -1,7 +1,7 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /* @author SOFTWARE III */
-
+/* @author Ana Flavia*/
 public class Tema {
     private int CodTema;
     private String nomeTema;
