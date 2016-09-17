@@ -1,6 +1,10 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /* @author SOFTWARE III */
+/**
+ * 
+ * @author Ruan Vinicios
+ */
 
 public class Inscricao {
     private int numero;
