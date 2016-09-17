@@ -12,7 +12,7 @@ import javax.persistence.Id;
 
 /**
  *
- * @author Diovanna Araujo
+ * @author Denylson Melo
  */
 @Entity
 public class EntidadeGenerica implements Serializable {
