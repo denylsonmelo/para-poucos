@@ -1,10 +1,15 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
+<<<<<<< HEAD
+/* @author SOFTWARE III */
+/* @author Gregorio Magno */
+=======
 /**
  * 
  * @author Lucas Rafael
  */
 
+>>>>>>> 909c1c5eeeac401e1e342c250a75c6269e2c17ba
 public class Participante {
     private int id;
     private int cpf;

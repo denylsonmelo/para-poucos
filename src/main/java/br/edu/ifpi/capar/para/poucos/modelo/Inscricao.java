@@ -1,10 +1,12 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/**
+/**Classe que faz especificação de Inscricao
  * 
+ * @author Denylson Melo
+ * @author Lucas Fontenele
  * @author Lucas Rafael
+ * @author Gregorio Magno
  */
-
 public class Inscricao {
     private int numero;
     private int codParticipante;

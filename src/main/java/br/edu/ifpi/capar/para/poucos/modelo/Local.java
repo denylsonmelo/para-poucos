@@ -1,9 +1,13 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/**
+/**Classe que faz especificação de Local
  * 
+ * @author Denylson Melo
+ * @author Lucas Fontenele
  * @author Lucas Rafael
+ * @author Gregorio Magno
  */
+
 
 public class Local {
     private int id;
