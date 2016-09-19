@@ -1,7 +1,9 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
+
 /**
  * 
+ * @author Lucas Rafael
  * @author Ramon josé
  */
 
@@ -46,14 +48,14 @@ public class Participante {
     }
 
     /**
-     * @return the id
+     * @return retorna o ID do participante
      */
     public int getId() {
         return id;
     }
 
     /**
-     * @param id the id to set
+     * @param id inseri o ID do participante
      */
     public void setId(int id) {
         this.id = id;
