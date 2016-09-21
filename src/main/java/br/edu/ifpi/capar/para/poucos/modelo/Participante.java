@@ -10,6 +10,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Arllayne Carvalho
  * @author Endrilenne Véras
  * @author Ramon jose
+ * @author Ruan Vinicios
  */
 public class Participante {
 
