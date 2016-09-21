@@ -6,6 +6,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Lucas Fontenele
  * @author Lucas Rafael
  * @author Gregorio Magno
+ * @author Jean Jr
  */
 
 

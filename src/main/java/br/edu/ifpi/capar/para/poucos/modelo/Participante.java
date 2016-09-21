@@ -3,6 +3,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 /**
  * 
  * @author Lucas Rafael
+ * @author Jean Jr
  */
 public class Participante {
     private int id;
