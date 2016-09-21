@@ -12,6 +12,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Diovanna Araujo
  * @author Arllayne Carvalhos
  * @author Endrilenne Véras
+ * @author Ramon jose
  */
 public class Evento {
 
