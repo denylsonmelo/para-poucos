@@ -12,6 +12,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Ana Flavia
  * @author Gregorio Magno
  * @author Jean Jr
+ * @author Lucas Fontenele
  */
 public class Instituicao {
     

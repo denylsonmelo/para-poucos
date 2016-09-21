@@ -5,6 +5,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Lucas Rafael
  * @author Jean Jr
  * @author Ana Flavia
+ * @author Lucas Fontenele
  */
 public class Tema {
     private int id;

@@ -15,6 +15,7 @@ import javax.persistence.Persistence;
 /**
  *
  * @author Denylson Melo
+ * @author Lucas Fontenele
  */
 public class TestarConnection {
 
