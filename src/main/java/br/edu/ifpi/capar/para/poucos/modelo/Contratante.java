@@ -2,7 +2,6 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 
 /**
  * Classe que faz especificação de Contratante
- *
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Lucas Rafael
@@ -12,6 +11,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Vanessa Pinto
  * @author Diovanna Araujo
  * @author Arllayne Carvalho
+ * @author Endrilenne Véras
  */
 public class Contratante {
 
@@ -28,7 +28,7 @@ public class Contratante {
     }
 
     /**
-     * @param cpf
+     * @param cpf insere o cpf
      */
     public void setCpf(int cpf) {
         this.cpf = cpf;
@@ -42,7 +42,7 @@ public class Contratante {
     }
 
     /**
-     * @param nome
+     * @param nome insere o nome
      */
     public void setNome(String nome) {
         this.nome = nome;
@@ -56,7 +56,7 @@ public class Contratante {
     }
 
     /**
-     * @param endereco
+     * @param endereco insere o endereço
      */
     public void setEndereco(String endereco) {
         this.endereco = endereco;

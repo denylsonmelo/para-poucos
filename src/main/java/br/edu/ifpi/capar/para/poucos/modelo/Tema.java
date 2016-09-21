@@ -8,6 +8,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Lucas Fontenele
  * @author Diovanna Araujo
  * @author Arllayne Carvalho
+ * @author Endrilenne Véras
  */
 public class Tema {
 

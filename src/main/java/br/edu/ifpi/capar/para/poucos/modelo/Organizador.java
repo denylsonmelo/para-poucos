@@ -12,6 +12,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Vanessa Pinto
  * @author Diovanna Araujo
  * @author Arllayne Carvalho
+ * @author Endrilenne Véras
  */
 public class Organizador {
 
@@ -31,7 +32,7 @@ public class Organizador {
     }
 
     /**
-     * @param cpf inseri o cpf do organizador
+     * @param cpf insere o cpf do organizador
      */
     public void setCpf(int cpf) {
         this.cpf = cpf;
@@ -46,7 +47,7 @@ public class Organizador {
     }
 
     /**
-     * @param contato inseri o contato do organizador do eevento
+     * @param contato insere o contato do organizador do eevento
      */
     public void setContato(int contato) {
         this.contato = contato;
@@ -61,7 +62,7 @@ public class Organizador {
 
     /**
      *
-     * @param nome inseri o nome do organizador
+     * @param nome insere o nome do organizador
      */
     public void setNome(String nome) {
         this.nome = nome;
@@ -69,14 +70,14 @@ public class Organizador {
 
     /**
      *
-     * @return retorna o nome da agencia
+     * @return retorna o nome da agência
      */
     public String getAgencia() {
         return agencia;
     }
 
     /**
-     * @param agencia inseri à agencia
+     * @param agencia insere a agência
      */
     public void setAgencia(String agencia) {
         this.agencia = agencia;
@@ -90,7 +91,7 @@ public class Organizador {
     }
 
     /**
-     * @param email inseri o email do organizador
+     * @param email insere o email do organizador
      */
     public void setEmail(String email) {
         this.email = email;

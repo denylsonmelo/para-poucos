@@ -12,6 +12,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Vanessa Pinto
  * @author Diovanna Araujo
  * @author Arllayne Carvalho
+ * @author Endrilenne Véras
  */
 public class Local {
 
@@ -24,7 +25,7 @@ public class Local {
     private int numero;
 
     /**
-     * @return retorna o id(enderço) do local
+     * @return retorna o id do local
      */
     public int getId() {
         return id;
@@ -59,7 +60,7 @@ public class Local {
     }
 
     /**
-     * @param capacidade insere a capacidade quantas pessoas cabem no local
+     * @param capacidade insere a capacidade do local
      */
     public void setCapacidade(int capacidade) {
         this.capacidade = capacidade;
@@ -80,7 +81,7 @@ public class Local {
     }
 
     /**
-     * @return retorna em qu estado vai ser o evento
+     * @return retorna em que estado vai ser o evento
      */
     public String getEstado() {
         return estado;

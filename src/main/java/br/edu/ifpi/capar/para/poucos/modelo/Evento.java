@@ -2,7 +2,6 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 
 /**
  * Classe que faz especificação de evento
- *
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Lucas Rafael
@@ -12,6 +11,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Vanessa Pinto
  * @author Diovanna Araujo
  * @author Arllayne Carvalhos
+ * @author Endrilenne Véras
  */
 public class Evento {
 
@@ -23,21 +23,21 @@ public class Evento {
     private int tipo;
 
     /**
-     * @return the idEvento
+     * @return  retorna o idEvento
      */
     public int getIdEvento() {
         return idEvento;
     }
 
     /**
-     * @param idEvento the idEvento to set
+     * @param idEvento insere idEvento 
      */
     public void setIdEvento(int idEvento) {
         this.idEvento = idEvento;
     }
 
     /**
-     * @return the nomeEvento
+     * @return retorna o nomeEvento
      */
     public String getNomeEvento() {
         return nomeEvento;
@@ -110,7 +110,7 @@ public class Evento {
     }
 
     /**
-     * @param dataEvento the dataEvento to set
+     * @param dataEvento insere a dataEvento 
      */
     public void setDataEvento(String dataEvento) {
         this.dataEvento = dataEvento;
