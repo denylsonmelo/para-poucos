@@ -7,6 +7,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;/**Classe que faz especificação d
  * @author Gregorio Magno
  * @author Jean Jr
  * @author Vanessa Pinto
+ * @author Diovanna Araujo
  */
 public class Evento {
     private int idEvento;

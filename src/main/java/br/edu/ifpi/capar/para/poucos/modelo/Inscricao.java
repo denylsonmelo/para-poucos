@@ -13,6 +13,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Jean Jr
  * @author  Ana Flavia
  * @author Vanessa Pinto
+ * @author Diovanna Araujo
  */
 public class Inscricao {
     private int numero;

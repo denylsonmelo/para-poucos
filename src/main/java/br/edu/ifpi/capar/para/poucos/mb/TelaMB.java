@@ -8,6 +8,7 @@ import javax.faces.bean.ManagedBean;
  * @author Denylson Melo
  * @author Ana Flávia
  * @author Lucas Fontenele
+ * @author Diovanna Araujo
  */
 @ManagedBean(name = "mbTela")
 public class TelaMB {

@@ -6,6 +6,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Jean Jr
  * @author Ana Flavia
  * @author Lucas Fontenele
+ * @author Diovanna Araujo
  */
 public class Participante {
     private int id;
