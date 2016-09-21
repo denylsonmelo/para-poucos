@@ -49,7 +49,7 @@ public class Tema {
     }
 /**
  * 
- * @param descricao inseri a descrição do tema
+ * @param descricao insere a descrição do tema
  */
     public void setDescricao(String descricao) {
         this.descricao = descricao;
