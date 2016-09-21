@@ -15,7 +15,8 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Lucas Fontenele
  * @author Vanessa Pinto
  * @author Diovanna Araujo
+ * @author Arllayne Carvalho
  */
 public class Instituicao {
-    
+
 }

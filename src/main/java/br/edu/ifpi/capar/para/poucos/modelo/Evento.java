@@ -1,5 +1,8 @@
-package br.edu.ifpi.capar.para.poucos.modelo;/**Classe que faz especificação de evento
- * 
+package br.edu.ifpi.capar.para.poucos.modelo;
+
+/**
+ * Classe que faz especificação de evento
+ *
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Lucas Rafael
@@ -8,8 +11,10 @@ package br.edu.ifpi.capar.para.poucos.modelo;/**Classe que faz especificação d
  * @author Jean Jr
  * @author Vanessa Pinto
  * @author Diovanna Araujo
+ * @author Arllayne Carvalhos
  */
 public class Evento {
+
     private int idEvento;
     private String nomeEvento;
     private String dataEvento;
@@ -37,52 +42,59 @@ public class Evento {
     public String getNomeEvento() {
         return nomeEvento;
     }
-/**
- * @return retorna a data do evento
-   */ 
+
+    /**
+     * @return retorna a data do evento
+     */
     public String getData() {
         return dataEvento;
     }
-/**
- * @param data indica a data
-   */ 
+
+    /**
+     * @param data indica a data
+     */
     public void setData(String data) {
         this.dataEvento = data;
     }
+
     /**
- * @return retorna o horario do evento
-   */ 
+     * @return retorna o horario do evento
+     */
     public int getHorario() {
         return horario;
     }
-/**
- * @param horario indica o horario do evento
-   */ 
+
+    /**
+     * @param horario indica o horario do evento
+     */
     public void setHorario(int horario) {
         this.horario = horario;
     }
-/**
- * @return retorna a idade minima para uma pessoa entrar no evento
-   */ 
+
+    /**
+     * @return retorna a idade minima para uma pessoa entrar no evento
+     */
     public int getIdadeMinima() {
         return idadeMinima;
     }
+
     /**
- * @param idadeMinima indica a idade  minima que se precisa ter.
-   */ 
+     * @param idadeMinima indica a idade minima que se precisa ter.
+     */
     public void setIdadeMinima(int idadeMinima) {
         this.idadeMinima = idadeMinima;
     }
-/**
- * @return retorna que tipo de evento vai ser feito
- */
+
+    /**
+     * @return retorna que tipo de evento vai ser feito
+     */
     public int getTipo() {
         return tipo;
     }
-    /**
-     *@param tipo insere o tipo de evento
-    */ 
 
+    /**
+     * @param tipo insere o tipo de evento
+     */
     /**
      * @param nomeEvento the nomeEvento to set
      */
@@ -102,6 +114,5 @@ public class Evento {
      */
     public void setDataEvento(String dataEvento) {
         this.dataEvento = dataEvento;
-    }}
-
-    
+    }
+}
