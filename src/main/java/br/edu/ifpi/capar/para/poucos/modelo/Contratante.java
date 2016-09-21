@@ -1,9 +1,12 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/**
+/**Classe que faz especificação de Contratante
  * 
+ * @author Denylson Melo
+ * @author Lucas Fontenele
  * @author Lucas Rafael
  * @author Ana Flavia
+ * @author Gregorio Magno
  */
 
 public class Contratante {

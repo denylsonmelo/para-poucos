@@ -1,48 +1,50 @@
-package br.edu.ifpi.capar.para.poucos.modelo;
-
-import br.edu.ifpi.capar.para.poucos.generico.EntidadeGenerica;
-
-/**Classe que faz especificação de evento
+package br.edu.ifpi.capar.para.poucos.modelo;/**Classe que faz especificação de evento
  * 
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Lucas Rafael
  * @author Ana Flavia
+ * @author Gregorio Magno
  */
-public class Evento extends EntidadeGenerica{
-
-    private String nome;
-    private String data;
+public class Evento {
+    private int idEvento;
+    private String nomeEvento;
+    private String dataEvento;
     private int horario;
     private int idadeMinima;
     private int tipo;
 
-    /**Método que retorna o nome do evento
-     * 
-     * @return Retorna o nome completo do evento
+    /**
+     * @return the idEvento
      */
-    public String getNome() {
-        return nome;
+    public int getIdEvento() {
+        return idEvento;
     }
 
-    /**Método que seta o nome do evento
-     * 
-     * @param nome O nome do evento propriamente dito
+    /**
+     * @param idEvento the idEvento to set
      */
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setIdEvento(int idEvento) {
+        this.idEvento = idEvento;
+    }
+
+    /**
+     * @return the nomeEvento
+     */
+    public String getNomeEvento() {
+        return nomeEvento;
     }
 /**
  * @return retorna a data do evento
    */ 
     public String getData() {
-        return data;
+        return dataEvento;
     }
 /**
  * @param data indica a data
    */ 
     public void setData(String data) {
-        this.data = data;
+        this.dataEvento = data;
     }
     /**
  * @return retorna o horario do evento
@@ -77,7 +79,26 @@ public class Evento extends EntidadeGenerica{
     /**
      *@param tipo insere o tipo de evento
     */ 
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
+
+    /**
+     * @param nomeEvento the nomeEvento to set
+     */
+    public void setNomeEvento(String nomeEvento) {
+        this.nomeEvento = nomeEvento;
     }
-}
+
+    /**
+     * @return the dataEvento
+     */
+    public String getDataEvento() {
+        return dataEvento;
+    }
+
+    /**
+     * @param dataEvento the dataEvento to set
+     */
+    public void setDataEvento(String dataEvento) {
+        this.dataEvento = dataEvento;
+    }}
+
+    

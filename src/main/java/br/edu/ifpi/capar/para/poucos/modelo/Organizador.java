@@ -1,11 +1,13 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/**
+/**Classe que faz especificação de Organizador
  * 
+ * @author Denylson Melo
+ * @author Lucas Fontenele
  * @author Lucas Rafael
  * @author Ana Flavia
+ * @author Gregorio Magno
  */
-
 public class Organizador {
     private int id;
     private int cpf;
