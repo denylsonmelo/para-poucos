@@ -16,9 +16,8 @@ public class TelaMB {
     //TODO coloca algum lembrete
     private String nome = "sistema web gerenciador de eventos";
 
-    /**TODO para que o metodo serve
-     *
-     * @return colocar o que retorna
+    /**
+     * @return nomeModificado
      */
     public String getNomeModificado() {
         return nome + "mais alguma coisa";

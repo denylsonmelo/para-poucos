@@ -26,7 +26,6 @@ public class Organizador {
     private String email;
 
     /**
-     *
      * @return retorna o cpf do organizador
      */
     public int getCpf() {

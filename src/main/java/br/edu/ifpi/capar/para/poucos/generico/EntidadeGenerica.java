@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.edu.ifpi.capar.para.poucos.generico;
 
 import java.io.Serializable;
@@ -11,7 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
- *
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Diovanna Araujo
@@ -24,29 +18,46 @@ public class EntidadeGenerica implements Serializable {
     private LocalDateTime dataCriacao;
     private LocalDateTime dataModificacao;
 
+    /**
+     * @return ID de entidade generica
+     */
     public int getId() {
         return id;
     }
-
+    
+    /**
+     * @param id de entidade generica
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * @return Data/Time local 
+     */
     public LocalDateTime getDataCriacao() {
         return dataCriacao;
     }
-
+    
+    /**
+     * @param dataCriacao é descrita
+     */
     public void setDataCriacao(LocalDateTime dataCriacao) {
         this.dataCriacao = dataCriacao;
     }
 
+    /**
+     * @return data modificada
+     */
     public LocalDateTime getDataModificacao() {
         return dataModificacao;
     }
 
+    /**
+     * @param dataModificacao 
+     * Descrever data de modificação
+     */
     public void setDataModificacao(LocalDateTime dataModificacao) {
         this.dataModificacao = dataModificacao;
-    }
-      
-    
+    }  
 }

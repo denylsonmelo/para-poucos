@@ -17,104 +17,99 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  */
 public class Evento {
 
-    private int idEvento;
-    private String nomeEvento;
-    private String dataEvento;
+    private int id;
+    private String nome;
+    private String data;
     private int horario;
     private int idadeMinima;
     private int tipo;
 
     /**
-     * @return  retorna o idEvento
+     * @return  retorna o id do evento
      */
-    public int getIdEvento() {
-        return idEvento;
+    public int getId() {
+        return id;
     }
 
     /**
-     * @param idEvento insere idEvento 
+     * @param id 
+     * Insere ID do Evento
      */
-    public void setIdEvento(int idEvento) {
-        this.idEvento = idEvento;
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**
-     * @return retorna o nomeEvento
-     */
-    public String getNomeEvento() {
-        return nomeEvento;
-    }
-
-    /**
-     * @return retorna a data do evento
-     */
-    public String getData() {
-        return dataEvento;
-    }
-
-    /**
-     * @param data indica a data
-     */
-    public void setData(String data) {
-        this.dataEvento = data;
-    }
-
-    /**
-     * @return retorna o horario do evento
+     * @return retorna o horario do Evento
      */
     public int getHorario() {
         return horario;
     }
 
     /**
-     * @param horario indica o horario do evento
+     * @param horario 
+     * Define o horario para o Evento
      */
     public void setHorario(int horario) {
         this.horario = horario;
     }
 
     /**
-     * @return retorna a idade minima para uma pessoa entrar no evento
+     * @return retorna a idade minima para uma pessoa entrar no Evento
      */
     public int getIdadeMinima() {
         return idadeMinima;
     }
 
     /**
-     * @param idadeMinima indica a idade minima que se precisa ter.
+     * @param idadeMinima 
+     * Define a idade minima para o Evento.
      */
     public void setIdadeMinima(int idadeMinima) {
         this.idadeMinima = idadeMinima;
     }
 
     /**
-     * @return retorna que tipo de evento vai ser feito
+     * @return retorna o tipo do Evento
      */
     public int getTipo() {
         return tipo;
     }
 
     /**
-     * @param tipo insere o tipo de evento
+     * @param tipo
+     * Define o tipo de Evento
      */
+    public void setTipo(int tipo){
+        this.tipo = tipo;
+    }
+    
     /**
-     * @param nomeEvento the nomeEvento to set
+     * @param nome 
+     * Define o nome do Evento
      */
-    public void setNomeEvento(String nomeEvento) {
-        this.nomeEvento = nomeEvento;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    /**
+     * @return retorna o nome do Evento
+     */
+    public String getNome() {
+        return nome;
     }
 
     /**
-     * @return the dataEvento
+     * @return exibe a data do Evento
      */
-    public String getDataEvento() {
-        return dataEvento;
+    public String getData() {
+        return data;
     }
 
     /**
-     * @param dataEvento insere a dataEvento 
+     * @param data insere a data 
      */
-    public void setDataEvento(String dataEvento) {
-        this.dataEvento = dataEvento;
+    public void setData(String data) {
+        this.data = data;
     }
 }

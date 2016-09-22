@@ -21,7 +21,6 @@ public class Participante {
     private String nome;
 
     /**
-     *
      * @return retorna o cpf do participante do evento
      */
     public int getCpf() {
@@ -36,7 +35,6 @@ public class Participante {
     }
 
     /**
-     *
      * @return retorna o rg do participante
      */
     public int getRg() {
@@ -44,7 +42,6 @@ public class Participante {
     }
 
     /**
-     *
      * @param rg insere o rg do participante
      */
     public void setRg(int rg) {
@@ -52,7 +49,6 @@ public class Participante {
     }
 
     /**
-     *
      * @return retorna a idade do participante
      */
     public int getIdade() {
@@ -60,7 +56,6 @@ public class Participante {
     }
 
     /**
-     *
      * @param idade insere a idade do participante
      */
     public void setIdade(int idade) {
@@ -68,7 +63,6 @@ public class Participante {
     }
 
     /**
-     *
      * @return retorna o nome participante
      */
     public String getNome() {
@@ -76,7 +70,6 @@ public class Participante {
     }
 
     /**
-     *
      * @param nome insere o nome do paricipante
      */
     public void setNome(String nome) {
