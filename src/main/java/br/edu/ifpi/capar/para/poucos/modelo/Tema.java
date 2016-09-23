@@ -1,12 +1,12 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /**
- *
+ * Classe com as especificaões do Tema de um Evento.
+ * @author Diovanna Araujo
  * @author Lucas Rafael
  * @author Jean Jr
  * @author Ana Flavia
  * @author Lucas Fontenele
- * @author Diovanna Araujo
  * @author Arllayne Carvalho
  * @author Endrilenne Véras
  * @author Ramon jose
@@ -19,7 +19,7 @@ public class Tema {
     private String descricao;
 
     /**
-     * @return retorna o id do tema
+     * @return retorna o id do Tema de um Evento.
      */
     public int getId() {
         return id;
@@ -27,7 +27,7 @@ public class Tema {
 
     /**
      *
-     * @param id insere o id do tema do vento
+     * @param id recebe o id do Tema de um Evento.
      */
     public void setId(int id) {
         this.id = id;
@@ -35,7 +35,7 @@ public class Tema {
 
     /**
      *
-     * @return retorna o nome
+     * @return retorna o nome do Tema de um Evento.
      */
     public String getNome() {
         return nome;
@@ -43,7 +43,7 @@ public class Tema {
 
     /**
      *
-     * @param nome insere o nome
+     * @param nome recebe o nome do Tema de um Evento.
      */
     public void setNome(String nome) {
         this.nome = nome;
@@ -51,14 +51,14 @@ public class Tema {
 
     /**
      *
-     * @return retorna a descrição do tema do evento
+     * @return retorna a descrição do Tema de um Evento.
      */
     public String getDescricao() {
         return descricao;
     }
 
     /**
-     * @param descricao insere a descrição do tema
+     * @param descricao recebe a descrição do Tema de um Evento.
      */
     public void setDescricao(String descricao) {
         this.descricao = descricao;

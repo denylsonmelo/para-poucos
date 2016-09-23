@@ -1,8 +1,8 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /**
- * Classe que faz especificação de Organizador
- *
+ * Classe com as especificações de Organizador do Evento.
+ * @author Diovanna Araujo
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Lucas Rafael
@@ -10,7 +10,6 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Gregorio Magno
  * @author Jean Jr
  * @author Vanessa Pinto
- * @author Diovanna Araujo
  * @author Arllayne Carvalho
  * @author Endrilenne Véras
  * @author Ramon jose
@@ -26,21 +25,21 @@ public class Organizador {
     private String email;
 
     /**
-     * @return retorna o cpf do organizador
+     * @return retorna o numero do cpf do Organizador do Evento.
      */
     public int getCpf() {
         return cpf;
     }
 
     /**
-     * @param cpf insere o cpf do organizador
+     * @param cpf recebe o numero do cpf do Organizador do Evento.
      */
     public void setCpf(int cpf) {
         this.cpf = cpf;
     }
 
     /**
-     * @return returna o contato do organizador do evento
+     * @return returna o contato do Organizador do Evento.
      */
 
     public int getContato() {
@@ -48,14 +47,14 @@ public class Organizador {
     }
 
     /**
-     * @param contato insere o contato do organizador do eevento
+     * @param contato recebe o contato do Organizador do Evento.
      */
     public void setContato(int contato) {
         this.contato = contato;
     }
 
     /**
-     * @return retorna o nome do organizador
+     * @return retorna o nome do Organizador do Evento.
      */
     public String getNome() {
         return nome;
@@ -63,7 +62,7 @@ public class Organizador {
 
     /**
      *
-     * @param nome insere o nome do organizador
+     * @param nome recebe o nome do Organizador do Evento.
      */
     public void setNome(String nome) {
         this.nome = nome;
@@ -71,28 +70,28 @@ public class Organizador {
 
     /**
      *
-     * @return retorna o nome da agência
+     * @return retorna o nome da agência em que o Organizador do Evento faz parte.
      */
     public String getAgencia() {
         return agencia;
     }
 
     /**
-     * @param agencia insere a agência
+     * @param agencia recebe o nome da agência em que o Organizador do Evento faz parte.
      */
     public void setAgencia(String agencia) {
         this.agencia = agencia;
     }
 
     /**
-     * @return retorna o email do organizador
+     * @return retorna o email do Organizador do Evento.
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * @param email insere o email do organizador
+     * @param email recebe o email do Organizador do Evento.
      */
     public void setEmail(String email) {
         this.email = email;
@@ -100,14 +99,14 @@ public class Organizador {
 
     /**
      *
-     * @return retorna o id do organizador
+     * @return retorna o id do Organizador do Evento.
      */
     public int getId() {
         return id;
     }
 
     /**
-     * @param id insere o id do organizador
+     * @param id recebe o id do Organizador do Evento.
      */
     public void setId(int id) {
         this.id = id;

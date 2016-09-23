@@ -1,6 +1,7 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
- /**Classe que faz especificação de Inscricao
+ /**Classe com as especificações de Inscricao.
+ * @author Diovanna Araujo
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Lucas Rafael
@@ -8,7 +9,6 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Jean Jr
  * @author Ana Flavia
  * @author Vanessa Pinto
- * @author Diovanna Araujo
  * @author Arllayne Carvalho
  * @author Endrilenne Véras
  * @author Ramon jose
@@ -17,33 +17,33 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 public class Inscricao {
 
     private int numero;
-    private int codParticipante;
+    private int participante;
 
     /**
-     * @return retorna o numero de inscritos
+     * @return retorna o numero da inscrição do Participante.
      */
     public int getNumero() {
         return numero;
     }
 
     /**
-     * @param numero insere o numero de inscritos
+     * @param numero recebe o numero da inscrição do Participante.
      */
     public void setNumero(int numero) {
         this.numero = numero;
     }
 
     /**
-     * @return retorna o código de cada participante do evento
+     * @return retorna o id do Participante do Evento.
      */
-    public int getCodParticipante() {
-        return codParticipante;
+    public int getParticipante() {
+        return participante;
     }
 
     /**
-     * @param codParticipante insere o código de cada particiante
+     * @param participante recebe o id do Participante do Evento.
      */
-    public void setCodParticipante(int codParticipante) {
-        this.codParticipante = codParticipante;
+    public void setParticipante(int participante) {
+        this.participante = participante;
     }
 }

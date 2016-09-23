@@ -4,11 +4,10 @@ import javax.faces.bean.ManagedBean;
 
 /**TODO
  * para que a classe serve
- *
+ *@author Diovanna Araujo
  * @author Denylson Melo
  * @author Ana Flávia
  * @author Lucas Fontenele
- * @author Diovanna Araujo
  */
 @ManagedBean(name = "mbTela")
 public class TelaMB {

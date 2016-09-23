@@ -1,7 +1,8 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /**
- * Classe que faz especificação de Contratante
+ * Classe com as especificações de Contratante.
+ * @author Diovanna Araujo
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Lucas Rafael
@@ -9,7 +10,6 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Gregorio Magno
  * @author Jean Jr
  * @author Vanessa Pinto
- * @author Diovanna Araujo
  * @author Arllayne Carvalho
  * @author Endrilenne Véras
  * @author Ramon jose
@@ -23,56 +23,56 @@ public class Contratante {
     private String endereco;
 
     /**
-     * @return retorna o numero de cpf do cliente.
+     * @return retorna o numero de cpf do Contratante.
      */
     public int getCpf() {
         return cpf;
     }
 
     /**
-     * @param cpf insere o cpf
+     * @param cpf recebe o cpf do Contratante.
      */
     public void setCpf(int cpf) {
         this.cpf = cpf;
     }
 
     /**
-     * @return retorna o nome do cliente.
+     * @return retorna o nome do Contratante.
      */
     public String getNome() {
         return nome;
     }
 
     /**
-     * @param nome insere o nome
+     * @param nome recebe o nome do Contratante.
      */
     public void setNome(String nome) {
         this.nome = nome;
     }
 
     /**
-     * @return retorna o endereço do cliente.
+     * @return retorna o endereço do Contratante.
      */
     public String getEndereco() {
         return endereco;
     }
 
     /**
-     * @param endereco insere o endereço
+     * @param endereco recebe o endereço do Contratante.
      */
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
     /**
-     * @return retorna o id cliente.
+     * @return retorna o id do Contratante.
      */
     public int getId() {
         return id;
     }
 
     /**
-     * @param id insere o id do contratante
+     * @param id recebe o id do Contratante.
      */
     public void setId(int id) {
         this.id = id;

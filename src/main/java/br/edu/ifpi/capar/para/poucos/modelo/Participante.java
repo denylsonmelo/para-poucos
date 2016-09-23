@@ -1,12 +1,11 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/**
- *
+/**Classe com as especificações do Participante de um Evento.
+ *@author Diovanna Araujo
  * @author Lucas Rafael
  * @author Jean Jr
  * @author Ana Flavia
  * @author Lucas Fontenele
- * @author Diovanna Araujo
  * @author Arllayne Carvalho
  * @author Endrilenne Véras
  * @author Ramon jose
@@ -21,70 +20,70 @@ public class Participante {
     private String nome;
 
     /**
-     * @return retorna o cpf do participante do evento
+     * @return retorna o numero do cpf do Participante de um Evento.
      */
     public int getCpf() {
         return cpf;
     }
 
     /**
-     * @param cpf insere o cpf do participante
+     * @param cpf recebe o numero do cpf do Participante de um Evento.
      */
     public void setCpf(int cpf) {
         this.cpf = cpf;
     }
 
     /**
-     * @return retorna o rg do participante
+     * @return retorna o rg do Participante de um Evento.
      */
     public int getRg() {
         return rg;
     }
 
     /**
-     * @param rg insere o rg do participante
+     * @param rg recebe o rg do Participante de um Evento.
      */
     public void setRg(int rg) {
         this.rg = rg;
     }
 
     /**
-     * @return retorna a idade do participante
+     * @return retorna a idade do Participante de um Evento.
      */
     public int getIdade() {
         return idade;
     }
 
     /**
-     * @param idade insere a idade do participante
+     * @param idade recebe a idade do Participante de um Evento.
      */
     public void setIdade(int idade) {
         this.idade = idade;
     }
 
     /**
-     * @return retorna o nome participante
+     * @return retorna o nome do Participante de um Evento.
      */
     public String getNome() {
         return nome;
     }
 
     /**
-     * @param nome insere o nome do paricipante
+     * @param nome recebe o nome do Participante de um Evento.
      */
     public void setNome(String nome) {
         this.nome = nome;
     }
 
     /**
-     * @return retorna o id do partipante
+     * @return retorna o id do Participante de um Evento.
      */
     public int getId() {
         return id;
     }
 
     /**
-     * @param id insere o id do participante
+     * @param id recebe o id do Participante de um Evento.
      */
     public void setId(int id) {
         this.id = id;

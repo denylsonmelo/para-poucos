@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-/**
+/** Classe genérica
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Diovanna Araujo

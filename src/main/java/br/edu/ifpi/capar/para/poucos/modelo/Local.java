@@ -1,8 +1,8 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /**
- * Classe que faz especificação de Local
- *
+ * Classe com as especificações do Local onde será realizado o Evento.
+ * @author Diovanna Araujo
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Lucas Rafael
@@ -10,7 +10,6 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Gregorio Magno
  * @author Jean Jr
  * @author Vanessa Pinto
- * @author Diovanna Araujo
  * @author Arllayne Carvalho
  * @author Endrilenne Véras
  * @author Ramon jose
@@ -22,82 +21,82 @@ public class Local {
     private String nome;
     private int capacidade;
     private String cidade;
-    private String estado;
+    private String uf;
     private String rua;
     private int numero;
 
     /**
-     * @return retorna o id do local
+     * @return retorna o id do Local onde será realizado o Evento.
      */
     public int getId() {
         return id;
     }
 
     /**
-     * @param id insere o id do local
+     * @param id recebe o id do Local onde será realizado o Evento.
      */
     public void setId(int id) {
         this.id = id;
     }
 
     /**
-     * @return retorna o nome do local do evento
+     * @return retorna o nome do Local onde será realizado o Evento.
      */
     public String getNome() {
         return nome;
     }
 
     /**
-     * @param nome insere o nome do local
+     * @param nome recebe o nome do Local onde será realizado o Evento.
      */
     public void setNome(String nome) {
         this.nome = nome;
     }
 
     /**
-     * @return retorna a capacidade do local
+     * @return retorna a quantidade máxima de participantes que o Local, onde será realizado o Evento, pode acomodar.
      */
     public int getCapacidade() {
         return capacidade;
     }
 
     /**
-     * @param capacidade insere a capacidade do local
+     * @param capacidade recebe a quantidade máxima de participantes que o Local, onde será realizado o Evento, pode acomodar.
      */
     public void setCapacidade(int capacidade) {
         this.capacidade = capacidade;
     }
 
     /**
-     * @return retorna em que cidade vai ser o evento
+     * @return retorna a cidade onde será realizado o Evento.
      */
     public String getCidade() {
         return cidade;
     }
 
     /**
-     * @param cidade insere em que cidade vai ser o evento
+     * @param cidade recebe a cidade onde será realizado o Evento.
      */
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }
 
     /**
-     * @return retorna em que estado vai ser o evento
+     * @return retorna a unidade federal onde será realizado o Evento.
      */
-    public String getEstado() {
-        return estado;
+    public String getUf() {
+        return uf;
     }
 
     /**
-     * @param estado insere o estado(local) vai ser o evento
+     * @param uf a unidade federal onde será realizado o Evento.
      */
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public void setUf(String uf) {
+        this.uf = uf;
     }
 
     /**
-     * @return retorna em que rua vai ser o evento
+     * @return retorna a rua do Local onde será realizado o Evento.
      */
 
     public String getRua() {
@@ -105,21 +104,21 @@ public class Local {
     }
 
     /**
-     * @param rua insere a rua que vai ser o evento
+     * @param rua recebe a rua do Local onde será realizado o Evento.
      */
     public void setRua(String rua) {
         this.rua = rua;
     }
 
     /**
-     * @return retorna o numero(da casa ou apartamento) do evento
+     * @return retorna o numero de identificação do Local onde será realizado o Evento. 
      */
     public int getNumero() {
         return numero;
     }
 
     /**
-     * @param numero insere o numero da casa ou apartamento
+     * @param numero recebe o numero de identificação do Local onde será realizado o Evento. 
      */
     public void setNumero(int numero) {
         this.numero = numero;
