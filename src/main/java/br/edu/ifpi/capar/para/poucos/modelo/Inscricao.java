@@ -5,6 +5,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Lucas Rafael
+ * @author Ruan Vinicios
  * @author Gregorio Magno
  * @author Jean Jr
  * @author Ana Flavia
@@ -12,7 +13,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Arllayne Carvalho
  * @author Endrilenne Véras
  * @author Ramon jose
- * @author Ruan Vinicios
+ * 
  */
 public class Inscricao {
 
