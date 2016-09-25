@@ -2,7 +2,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
 
 /**
  * Classe com as especificações de Instituição.
- * @author Diovanna Araujo
+ * @author Diovanna Araujo da Silva
  * @author Denylson Melo
  * @author Lucas Rafael
  * @author Ana Flavia

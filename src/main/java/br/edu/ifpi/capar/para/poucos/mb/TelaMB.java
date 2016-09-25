@@ -2,9 +2,8 @@ package br.edu.ifpi.capar.para.poucos.mb;
 
 import javax.faces.bean.ManagedBean;
 
-/**TODO
- * para que a classe serve
- *@author Diovanna Araujo
+/**TODO para que a classe serve
+ *@author Diovanna Araujo da Silva
  * @author Denylson Melo
  * @author Ana Flávia
  * @author Lucas Fontenele

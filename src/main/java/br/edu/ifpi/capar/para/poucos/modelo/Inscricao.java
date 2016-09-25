@@ -1,7 +1,7 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
  /**Classe com as especificações de Inscricao.
- * @author Diovanna Araujo
+ * @author Diovanna Araujo da Silva
  * @author Denylson Melo
  * @author Lucas Fontenele
  * @author Lucas Rafael

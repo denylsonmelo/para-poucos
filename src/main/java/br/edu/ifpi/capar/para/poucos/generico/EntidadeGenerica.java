@@ -6,9 +6,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /** Classe genérica
+ * @author Diovanna Araujo da Silva
  * @author Denylson Melo
  * @author Lucas Fontenele
- * @author Diovanna Araujo
  */
 @Entity
 public class EntidadeGenerica implements Serializable {

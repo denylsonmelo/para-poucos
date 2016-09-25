@@ -1,7 +1,7 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 /**Classe com as especificações do Participante de um Evento.
- *@author Diovanna Araujo
+ *@author Diovanna Araujo da Silva
  * @author Lucas Rafael
  * @author Jean Jr
  * @author Ana Flavia

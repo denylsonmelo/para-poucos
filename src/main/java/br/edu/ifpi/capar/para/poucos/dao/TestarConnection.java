@@ -8,7 +8,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**Classe para conexão com o BD
- *
+ * @author Diovanna Araujo da Silva
  * @author Denylson Melo
  * @author Lucas Fontenele
  */
