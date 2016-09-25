@@ -5,6 +5,7 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Diovanna Araujo
  * @author Denylson Melo
  * @author Lucas Fontenele
+ * @author Ramon jose
  * @author Lucas Rafael
  * @author Ana Flavia
  * @author Gregorio Magno
@@ -12,7 +13,6 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Vanessa Pinto
  * @author Arllayne Carvalho
  * @author Endrilenne Véras
- * @author Ramon jose
  * @author Ruan Vinicios
  */
 public class Contratante {
