@@ -1,14 +1,18 @@
 package br.edu.ifpi.capar.para.poucos.mb;
 
-import javax.faces.bean.ManagedBean;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Named;
 
-/**TODO para que a classe serve
- *@author Diovanna Araujo da Silva
+/**
+ * TODO para que a classe serve
+ *
+ * @author Diovanna Araujo da Silva
  * @author Denylson Melo
  * @author Ana Flávia
  * @author Lucas Fontenele
  */
-@ManagedBean(name = "mbTela")
+@Named("mbTela")
+@RequestScoped
 public class TelaMB {
 
     //TODO coloca algum lembrete
