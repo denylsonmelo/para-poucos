@@ -3,10 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Para Poucos - Sistema web gerenciador de eventos</title>
+        <title>#{msg.sistemaNome} - #{msg.sistemaApresentacao}</title>
     </h:head>
     <h:body>
+        <h:outputLink value="#{mbI18n.trocaIdioma("pt_BR")}" >Português</h:outputLink>
+        <h:outputLink value="#{mbI18n.trocaIdioma("en_US")}">Inglês</h:outputLink>
+        
         <h:outputText value="#{mbTela.nomeModificado}"/>
+        <h:outputText value="#{msg.sistemaNome}"/>
+        <h:outputText value="#{msg.sistemaApresentacao}"/>
     </h:body>
 </html>
 

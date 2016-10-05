@@ -16,12 +16,12 @@ import javax.inject.Named;
 public class TelaMB {
 
     //TODO coloca algum lembrete
-    private String nome = "sistema web gerenciador de eventos";
+    private String nome = "";
 
     /**
      * @return nomeModificado
      */
     public String getNomeModificado() {
-        return nome + "mais alguma coisa";
+        return nome;
     }
 }
