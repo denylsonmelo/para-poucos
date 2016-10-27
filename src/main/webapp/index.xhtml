@@ -1,17 +1,23 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <f:view locale="#{mbI18n.locale}"/>
     <h:head>
-        <title>#{msg.sistemaNome} - #{msg.sistemaApresentacao}</title>
+        <title>#{msg.sistema_nome} - #{msg.sistema_apresentacao}</title>
     </h:head>
     <h:body>
-        <h:outputLink value="#{mbI18n.trocaIdioma("pt_BR")}" >Português</h:outputLink>
-        <h:outputLink value="#{mbI18n.trocaIdioma("en_US")}">Inglês</h:outputLink>
-        
-        <h:outputText value="#{mbTela.nomeModificado}"/>
-        <h:outputText value="#{msg.sistemaNome}"/>
-        <h:outputText value="#{msg.sistemaApresentacao}"/>
+        <h:panelGrid columns="2">
+            <h:form>
+                <h:commandLink action="#{mbI18n.trocaIdioma('pt_BR')}" value="#{msg.sistema_idiomaPortugues}"/>
+            </h:form>
+            <h:form>
+                <h:commandLink action="#{mbI18n.trocaIdioma('en_US')}" value="#{msg.sistema_idiomaIngles}"/>
+            </h:form>
+        </h:panelGrid>
+
+        <h:outputText value="#{msg.sistema_nome} - #{msg.sistema_apresentacao}"/>
     </h:body>
 </html>
 
