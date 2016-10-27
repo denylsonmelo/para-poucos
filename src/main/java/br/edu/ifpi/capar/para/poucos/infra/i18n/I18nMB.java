@@ -1,5 +1,6 @@
 package br.edu.ifpi.capar.para.poucos.infra.i18n;
 
+import br.edu.ifpi.capar.para.poucos.infra.constant.SystemConstant;
 import java.io.Serializable;
 import java.util.Locale;
 import javax.annotation.PostConstruct;
@@ -27,7 +28,7 @@ public class I18nMB implements Serializable {
 
     public String trocaIdioma(String idioma) {
         this.locale = new Locale(idioma);
-        return "index.jsf?faces-redirect=true";
+        return SystemConstant.REDIRECT_TO_INDEX;
     }
 
     public Locale getLocale() {
