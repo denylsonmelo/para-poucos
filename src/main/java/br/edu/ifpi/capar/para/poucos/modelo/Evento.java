@@ -1,12 +1,11 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 /**
  * Classe com as especificações de Evento.
@@ -32,11 +31,7 @@ public class Evento implements Serializable {
     
     private String nome;
     
-    @Temporal(TemporalType.DATE) //configurar como mapear um Calendar para o banco, usado apenas a data.
-    private String data;
-    
-    @Temporal(TemporalType.TIME) //usado apenas a hora.
-    private int horario;
+    private LocalDateTime dataTempo;
     
     private int idadeMinima;
     private int tipo;
@@ -53,20 +48,6 @@ public class Evento implements Serializable {
      */
     public void setId(int id) {
         this.id = id;
-    }
-
-    /**
-     * @return retorna o horário do Evento
-     */
-    public int getHorario() {
-        return horario;
-    }
-
-    /**
-     * @param horario recebe o horário em que será realizado o Evento.
-     */
-    public void setHorario(int horario) {
-        this.horario = horario;
     }
 
     /**
@@ -114,14 +95,14 @@ public class Evento implements Serializable {
     /**
      * @return retorna a data em que será realizado do Evento.
      */
-    public String getData() {
-        return data;
+    public LocalDateTime getDataTempo() {
+        return dataTempo;
     }
 
     /**
-     * @param data recebe a data em que será realizado do Evento.
+     * @param dataTempo recebe a data em que será realizado do Evento.
      */
-    public void setData(String data) {
-        this.data = data;
+    public void setDataTempo(LocalDateTime dataTempo) {
+        this.dataTempo = dataTempo;
     }
 }
