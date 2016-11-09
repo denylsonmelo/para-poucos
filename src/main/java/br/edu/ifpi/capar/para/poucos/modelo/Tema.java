@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /**
  * Classe com as especificaões do Tema de um Evento.
@@ -20,6 +21,9 @@ import javax.persistence.Id;
  */
 @Entity
 public class Tema implements Serializable {
+
+    @OneToOne(mappedBy = "tema")
+    private Evento evento;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
