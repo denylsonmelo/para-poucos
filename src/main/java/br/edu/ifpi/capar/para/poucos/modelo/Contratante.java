@@ -1,5 +1,11 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  * Classe com as especificações de Contratante.
  * @author Diovanna Araujo da Silva
@@ -15,9 +21,13 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Endrilenne Véras
  * @author Ruan Vinicios
  */
-public class Contratante {
-
+@Entity // indica que objetos dessa classe se tornem "persistíveis" no banco de dados. 
+public class Contratante implements Serializable {
+    
+    @Id // indica que o atributo id é nossa chave primária.
+    @GeneratedValue(strategy = GenerationType.AUTO) //indica que a chave auto incrementada.
     private int id;
+    
     private int cpf;
     private String nome;
     private String endereco;

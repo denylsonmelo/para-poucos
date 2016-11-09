@@ -1,7 +1,14 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  * Classe com as especificações de Organizador do Evento.
+ *
  * @author Diovanna Araujo da Silva
  * @author Denylson Melo
  * @author Lucas Fontenele
@@ -15,9 +22,13 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Ramon jose
  * @author Ruan Vinicios
  */
-public class Organizador {
+@Entity
+public class Organizador implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    
     private int cpf;
     private int contato;
     private String nome;
@@ -41,7 +52,6 @@ public class Organizador {
     /**
      * @return returna o contato do Organizador do Evento.
      */
-
     public int getContato() {
         return contato;
     }
@@ -70,14 +80,16 @@ public class Organizador {
 
     /**
      *
-     * @return retorna o nome da agência em que o Organizador do Evento faz parte.
+     * @return retorna o nome da agência em que o Organizador do Evento faz
+     * parte.
      */
     public String getAgencia() {
         return agencia;
     }
 
     /**
-     * @param agencia recebe o nome da agência em que o Organizador do Evento faz parte.
+     * @param agencia recebe o nome da agência em que o Organizador do Evento
+     * faz parte.
      */
     public void setAgencia(String agencia) {
         this.agencia = agencia;

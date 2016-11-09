@@ -1,5 +1,11 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
  /**Classe com as especificações de Inscricao.
  * @author Diovanna Araujo da Silva
  * @author Denylson Melo
@@ -15,9 +21,13 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Ramon jose
  * 
  */
-public class Inscricao {
-
+@Entity
+public class Inscricao implements Serializable {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int numero;
+    
     private int participante;
 
     /**

@@ -1,5 +1,13 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
 /**
  * Classe com as especificações de Evento.
  * @author Diovanna Araujo da Silva
@@ -15,12 +23,21 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Ramon jose
  * @author Ruan Vinicios
  */
-public class Evento {
+@Entity
+public class Evento implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    
     private String nome;
+    
+    @Temporal(TemporalType.DATE) //configurar como mapear um Calendar para o banco, usado apenas a data.
     private String data;
+    
+    @Temporal(TemporalType.TIME) //usado apenas a hora.
     private int horario;
+    
     private int idadeMinima;
     private int tipo;
 

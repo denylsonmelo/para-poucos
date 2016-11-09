@@ -1,7 +1,15 @@
 package br.edu.ifpi.capar.para.poucos.modelo;
 
-/**Classe com as especificações do Participante de um Evento.
- *@author Diovanna Araujo da Silva
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+/**
+ * Classe com as especificações do Participante de um Evento.
+ *
+ * @author Diovanna Araujo da Silva
  * @author Lucas Rafael
  * @author Jean Jr
  * @author Ana Flavia
@@ -11,9 +19,13 @@ package br.edu.ifpi.capar.para.poucos.modelo;
  * @author Ramon jose
  * @author Ruan Vinicios
  */
-public class Participante {
+@Entity
+public class Participante implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    
     private int cpf;
     private int rg;
     private int idade;
