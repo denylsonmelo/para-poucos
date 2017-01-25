@@ -10,32 +10,60 @@
         <link rel="stylesheet" href="css/style.css"/>
     </h:head>
     <h:body>
-        <h:panelGrid columns="2">
-            <h:form>
-                <h:commandLink action="#{mbI18n.trocaIdioma('pt_BR')}" value="#{msg.sistema_idiomaPortugues}"/>
-            </h:form>
-            <h:form>
-                <h:commandLink action="#{mbI18n.trocaIdioma('en_US')}" value="#{msg.sistema_idiomaIngles}"/>
-            </h:form>
-        </h:panelGrid>
-
-        <h:outputText value="#{msg.sistema_nome} - #{msg.sistema_apresentacao}"/>
-
-        <div class="center">
-            <h:panelGrid columns="1">
-                <p:outputLabel value="#{msg.telaInicial_mensagem}" />
-                <p:spacer height="10"/>
-                <p:button outcome="login" value="#{msg.telaInicial_btn_criarEvento}" styleClass="botao"/>
-                <p:spacer height="10"/>
-                <p:button outcome="teste" value="#{msg.telaInicial_btn_cadastrarOrganizador}" styleClass="botao"/>
-                <p:spacer height="10"/>
-                <p:button outcome="teste" value="#{msg.telaInicial_btn_cadastrarLocal}" styleClass="botao"/>
-            </h:panelGrid>
+        <div id="nav">
+            <div id="nav-wrapper">
+                <ul>
+                    <li><a href="#home" >Home</a></li>
+                    <li><a href="#algo2">Algo 2</a></li>
+                    <li><a href="#">Algo 3</a></li>
+                    <li><a href="#login">LOGIN</a></li>
+                </ul>
+            </div>
         </div>
 
-        <footer>
-            Alunos 3º - 2016
-        </footer>
+        <div class="secao1" id="home">
+            
+        </div>
+        <div class="secao2" id="algo2">
+            Secao1
+        </div>
+        <div class="secao3" id="algo3">
+            Secao1
+        </div>
+        <div class="secao4" id="login">
+            <div class="teste">
+                <div class="formulario">
+                    <table class="tableCenter">
+                        <tr>
+                            <td><label>NOME:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>SENHA:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password"/></td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <span class="pass"><a href="#">Esqueci minha senha</a></span>
+                                <div class="circulo" ><a href="#" class="alignButtonText" >Entrar</a></div>
+                            </td> 
+                        </tr>
+                    </table>
+                </div>
+                <div class="cadastrar">
+                    <a href="cadastro.jsf" class="linkCadastro">CADASTRE-SE</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    
+        <!--Faltando rodapé aqui--> 
     </h:body>
 </html>
 

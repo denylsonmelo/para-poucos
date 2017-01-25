@@ -2,25 +2,237 @@
     padding: 0px;
     margin: 0px;
 }
-html, body{
-    height: 100%;
+
+body,html{ 
+    padding: 0; 
+    margin: 0; 
+    font-family: Arial; 
+    font-size: 16px; 
+    background-color: #F1F1F1; 
+    height: 100%; 
 }
-.center{
+
+#nav{ 
+    background-color: rgba(0,0,0,0.4); 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+}
+
+#nav-wrapper{ 
+    width: 960px; 
+    margin: 0 auto; 
+    text-align: left; 
+}
+
+#nav ul{ 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+#nav ul li{ 
+    display: inline-block; 
+}
+
+#nav ul li:hover{ 
+    background-color: #333; 
+    
+}
+
+#nav ul li a,visited{ 
+    color: #CCC; 
+    display: block; 
+    padding: 25px; 
+    text-decoration: none; 
+}
+
+.form{
+    padding: 1%;
+    width: 25%;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     top: 50%;
-    text-align: center;  
-    width: 30%;
-    margin-left: auto; 
-    margin-right: auto;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.botao{
-    width: 350px;
     text-align: center;
-    padding: 15px 20px;
-    border: 1px solid #eee;
-    border-radius: 6px;
-    font-size: 18px;
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
+.tableCenter{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableCenter input{
+    border: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bold;
+    color: #666;
+}
+
+.tableCenter label{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0px;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align: left;
+}
+
+.button{
+    width: 30%;
+}
+
+.circulo {
+    width: 70px;
+    height: 70px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #FF7F00;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.circulo:hover{
+    background-color: #E66600;
+    cursor: pointer;
+}
+
+.alignButtonText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 15px;
+    font-style: bold;
+}
+
+.pass{
+    padding-top: 2%;
+    padding-right: 2%;
+    float: right;
+    text-align: right;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 11px;
+}
+
+.pass a{
+    text-decoration: none;
+    color: #DDD;
+}
+
+.pass a:hover{
+    color: #EEE;
+}
+
+.cadastrar{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #FF7F00;
+    margin-top: auto;
+    margin-top: 5%;
+    padding: 2%; 
+    text-align: center;
+    border-radius: 4px;
+}
+
+.cadastrar:hover{
+    background-color: #E66600;
+    cursor: pointer;
+}
+
+.linkCadastro{
+    text-decoration: none;
+    text-align: center;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 20px;
+    color: #FFF;
+}
+
+.teste{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+    position: relative;
+    top: 50%;
+    
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
+.form1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background-color: #677;
+}
+
+.formulario{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: #789;
+    padding: 3%;
+    width: 70%;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 45px -10px rgba(0,0,0,0.6);
+}
+
+select{
+    width: 20%;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+.secao1{
+    background-color: #678;
+    height: 100%;
+}
+
+.secao2{
+    background-color: #890;
+    height: 100%;
+}
+
+.secao3{
+    background-color: #345;
+    height: 100%;
+}
+
+.secao4{
+    background-color: #5CD7DD;
+    height: 100%;
+}
+
+.border{
+    border-bottom: 2px solid #FFF;
+}
+
+.footer {
+    background-color: orange;
+    position: relative;
+    top: 40%;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
 }
