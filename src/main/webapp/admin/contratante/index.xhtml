@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"  
+      xmlns:p="http://primefaces.org/ui">
+    <h:form>
+        <p:dataTable id="dtContratantes" value="#{listarContratanteBean.contratantes}" var="contratante"
+                     rendered="#{listarContratanteBean.deveExibir()}">
+            <p:column headerText="Nome">
+                <h:outputText value="#{contratante.nome}"/>
+            </p:column>
+            <p:column headerText="Cpf">
+                <h:outputText value="#{contratante.cpf}"/>
+            </p:column>
+            <p:column headerText="Endereco">
+                <h:outputText value="#{contratante.endereco}"/>
+            </p:column>
+        </p:dataTable>
+        <p:commandButton value="nome" action="#{listarContratanteBean.mudarExibicao()}" update="dtContratantes"/>
+    </h:form>
+</html>
