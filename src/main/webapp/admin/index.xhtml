@@ -3,21 +3,104 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"  
       xmlns:p="http://primefaces.org/ui">
-    <div style="height:500px">
-        <h:form>
-            <p:growl id="msgs" showDetail="true" />
+    <h:head>
+        <title>#{msg.sistema_nome} - #{msg.sistema_apresentacao}</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </h:head>
+    <h:body>
+        <div class="left">
+            <p  class="gerenciamento">
+                Gerênciamento
+            </p>
+            <h:form>
+                <p class="titleTableDB">
+                    <p:commandLink actionListener="#{buttonView.buttonAction}">
+                        <h:outputText value="Contratante" />
+                    </p:commandLink>
+                </p>
 
-            <p:dashboard id="board" model="#{dashboardView.model}">
-                <p:ajax event="reorder" listener="#{dashboardView.handleReorder}" update="msgs" />
+                <p class="titleTableDB">
+                    <p:commandLink actionListener="#{buttonView.buttonAction}">
+                        <h:outputText value="Evento" />
+                    </p:commandLink>
+                </p>
 
-                <p:panel id="contratante" header="Contratante">
-                    <p:button outcome="contratante/index" icon="ui-icon-star" title="Listar Contratante" value="Listar Contratante"/>
-                    <p:button outcome="contratante/index" icon="ui-icon-star" title="Cadastrar Contratante" value="Cadastrar Contratante"/>
-                </p:panel>
+                <p class="titleTableDB">
+                    <p:commandLink actionListener="#{buttonView.buttonAction}">
+                        <h:outputText value="Inscrição" />
+                    </p:commandLink>
+                </p>
 
-            </p:dashboard>
+                <p class="titleTableDB">
+                    <p:commandLink actionListener="#{buttonView.buttonAction}">
+                        <h:outputText value="Local" />
+                    </p:commandLink>
+                </p>
 
-            <div style="clear:both" />
-        </h:form>
-    </div>
+                <p class="titleTableDB">
+                    <p:commandLink actionListener="#{buttonView.buttonAction}">
+                        <h:outputText value="Organizador" />
+                    </p:commandLink>
+                </p>
+
+                <p class="titleTableDB">
+                    <p:commandLink actionListener="#{buttonView.buttonAction}">
+                        <h:outputText value="Participante" />
+                    </p:commandLink>
+                </p>
+
+                <p class="titleTableDB">
+                    <p:commandLink action="index.html" actionListener="#{buttonView.buttonAction}">
+                        <h:outputText value="Voltar" />
+                    </p:commandLink>
+                </p>
+            </h:form>
+        </div>
+        <div class="right">
+            <div class="teste">
+                <p class="titleTable">
+                    <h:outputText value="Contratante" />
+                </p>
+
+                <h:form id="form">
+                    <p:growl id="msgs" showDetail="true" />
+                    <p:dataTable id="null" var="car" value="#{dtSelectionView.cars3}" selectionMode="single" selection="#{dtSelectionView.selectedCar}" rowKey="#{car.id}">
+
+                        <p:ajax event="rowSelect" listener="#{dtSelectionView.onRowSelect}" update=":form:msgs" />
+                        <p:ajax event="rowUnselect" listener="#{dtSelectionView.onRowUnselect}" update=":form:msgs" />
+                        <p:column headerText="Id">
+                            <h:outputText value="#{car.id}" />
+                        </p:column>
+                        <p:column headerText="Year">
+                            <h:outputText value="#{car.year}" />
+                        </p:column>
+                        <p:column headerText="Brand">
+                            <h:outputText value="#{car.brand}" />
+                        </p:column>
+                        <p:column headerText="Color">
+                            <h:outputText value="#{car.color}" />
+                        </p:column>
+                    </p:dataTable>
+
+                </h:form>
+                <div class="buttonsControl">
+                    <p>
+                        <p:button  value="Cadastrar">
+
+                        </p:button>
+
+                        <p:button  value="Editar">
+
+                        </p:button>
+
+                        <p:button  value="Excluir">
+
+                        </p:button>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </h:body>
 </html>
+

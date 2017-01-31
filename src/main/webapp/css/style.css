@@ -13,16 +13,19 @@ body,html{
 }
 
 #nav{ 
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.5);
     position: fixed; 
     width: 100%; 
     top: 0; 
+    height: 9.5%;
+    
 }
 
 #nav-wrapper{ 
-    width: 960px; 
+    width: 80%;
     margin: 0 auto; 
     text-align: left; 
+    float: left;
 }
 
 #nav ul{ 
@@ -37,7 +40,7 @@ body,html{
 
 #nav ul li:hover{ 
     background-color: #333; 
-    
+
 }
 
 #nav ul li a,visited{ 
@@ -60,9 +63,34 @@ body,html{
     -webkit-transform: translateY( -50% );
     -moz-transform: translateY( -50% );
     transform: translateY( -50% );
+    overflow-y: hidden;
+}
+
+.i18n{
+    width: 10%;
+    float: right; 
+    color: #FFF;
+    
+    /*Alinha div verticalmente*/
+    height: 100%;
+    display: inline-flex;  
+    vertical-align: middle;
+    
+ 
+}
+
+
+.i18n img{
+    cursor: pointer;
+    width: 20%;
+    top: 50%;
+    margin: auto 10px; 
+    background-color: green; 
+    height: 30%;
 }
 
 .tableCenter{
+    margin: 0px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -72,8 +100,13 @@ body,html{
     border: none;
     margin-top: 1%;
     margin-bottom: 1%;
-    width: 100%;
     padding: 8px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
     border-radius: 4px;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: bold;
@@ -150,6 +183,7 @@ body,html{
     padding: 2%; 
     text-align: center;
     border-radius: 4px;
+    height: 3.5%;
 }
 
 .cadastrar:hover{
@@ -172,7 +206,7 @@ body,html{
 
     position: relative;
     top: 50%;
-    
+
     -webkit-transform: translateY( -50% );
     -moz-transform: translateY( -50% );
     transform: translateY( -50% );
@@ -192,16 +226,29 @@ body,html{
     background-color: #789;
     padding: 3%;
     width: 70%;
+    height: 45%;
     background-color: rgba(0,0,0,0.4);
     box-shadow: 0px 0px 45px -10px rgba(0,0,0,0.6);
+    overflow-y: auto;
+    
 }
 
 select{
-    width: 20%;
-    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-    font-size: 20px;
-    color: #000;
+    width: 100%;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bold;
+    color: #666;
+    font-size: 12px;
     text-align: center;
+    border-radius: 5px;
+    padding: 9px;
+    
+}
+
+select option{
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bold;
+    color: #666;
 }
 
 .secao1{
@@ -236,3 +283,30 @@ select{
     width: 100%;
     overflow:hidden;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+    border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+}
+
+.cadastrarLabel{
+    float: left;
+    padding-left: 30%;
+    cursor: pointer;
+}
+
+.pass2{
+    float: right;
+    width: 10%;
+    padding-right: 20%;
+}
+
