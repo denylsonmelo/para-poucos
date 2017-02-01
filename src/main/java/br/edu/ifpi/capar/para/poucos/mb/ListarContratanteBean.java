@@ -2,7 +2,6 @@ package br.edu.ifpi.capar.para.poucos.mb;
 
 import br.edu.ifpi.capar.para.poucos.dao.ContratanteDAO;
 import br.edu.ifpi.capar.para.poucos.modelo.Contratante;
-import java.util.Arrays;
 import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
@@ -20,7 +19,6 @@ public class ListarContratanteBean {
     @Inject
     private ContratanteDAO dao;
     private List<Contratante> contratantes;
-    private boolean exibirCombos = false;
 
     @PostConstruct
     private void init(){
@@ -31,11 +29,7 @@ public class ListarContratanteBean {
         return contratantes;
     }
     
-    public boolean deveExibir(){
-        return this.exibirCombos;
-    }
-    
-    public void mudarExibicao(){
-        this.exibirCombos = true;
+    public List<String> getEnderecos() {
+        return dao.buscarEnderecos();
     }
 }

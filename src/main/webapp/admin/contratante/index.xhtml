@@ -2,11 +2,22 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"  
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:form>
-        <p:dataTable id="dtContratantes" value="#{listarContratanteBean.contratantes}" var="contratante"
-                     rendered="#{listarContratanteBean.deveExibir()}">
-            <p:column headerText="Nome">
+        <p:dataTable id="dtContratantes" var="contratante"
+                     value="#{listarContratanteBean.contratantes}"
+                     paginator="true" rows="5"
+                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                     rowsPerPageTemplate="5,10,15">
+            <f:facet name="header">
+                Lista de Contratantes
+            </f:facet>
+
+            <p:column headerText="ID">
+                <h:outputText value="#{contratante.id}"/>
+            </p:column>
+            <p:column headerText="Nome" sortBy="#{contratante.nome}">
                 <h:outputText value="#{contratante.nome}"/>
             </p:column>
             <p:column headerText="Cpf">
@@ -15,7 +26,9 @@
             <p:column headerText="Endereco">
                 <h:outputText value="#{contratante.endereco}"/>
             </p:column>
+            <f:facet name="footer">
+                No total temos #{listarContratanteBean.contratantes.size()} Contratantes.
+            </f:facet>
         </p:dataTable>
-        <p:commandButton value="nome" action="#{listarContratanteBean.mudarExibicao()}" update="dtContratantes"/>
     </h:form>
 </html>

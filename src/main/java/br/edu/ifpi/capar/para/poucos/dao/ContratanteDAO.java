@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 
 /**
  *
@@ -16,6 +17,18 @@ public class ContratanteDAO {
     private EntityManager em;
 
     public List<Contratante> buscarTodos(){
-        return Arrays.asList(em.find(Contratante.class, 1));
+        TypedQuery<Contratante> query = em.
+                createQuery("select c from Contratante c", Contratante.class);
+        return query.getResultList();
+    }
+    
+    public List<String> buscarEnderecos(){
+        TypedQuery<String> query = em.
+                createQuery("select c.endereco from Contratante c group by c.endereco order by c.endereco asc", String.class);
+        return query.getResultList();
+    }
+    
+    public void cadastrar(Contratante contratante){
+        em.persist(contratante);
     }
 }
