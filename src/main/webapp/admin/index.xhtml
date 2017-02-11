@@ -14,14 +14,15 @@
                 Gerênciamento
             </p>
             <h:form>
+                <p:growl id="growl" life="2000" />
                 <p class="titleTableDB">
-                    <p:commandLink actionListener="#{buttonView.buttonAction}">
+                    <p:commandLink id="ajax" update="growl"  onclick="PF('dlg1').show();">
                         <h:outputText value="Contratante" />
                     </p:commandLink>
                 </p>
-
+                <!-- é necessario trocar o ID do commandLink , como no exemplo abaixo"-->
                 <p class="titleTableDB">
-                    <p:commandLink actionListener="#{buttonView.buttonAction}">
+                    <p:commandLink id="ajax2" update="growl"  onclick="PF('dlg2').show();">
                         <h:outputText value="Evento" />
                     </p:commandLink>
                 </p>
@@ -51,18 +52,15 @@
                 </p>
 
                 <p class="titleTableDB">
-                    <p:commandLink action="index.html" actionListener="#{buttonView.buttonAction}">
-                        <h:outputText value="Voltar" />
-                    </p:commandLink>
+                    <a href="../index.jsf">Sair</a>
                 </p>
+
             </h:form>
         </div>
         <div class="right">
-            <div class="teste">
-                <p class="titleTable">
-                    <h:outputText value="Contratante" />
-                </p>
-
+            <!-- a partir daqui começa o dialog 1 chamado como >> dlg1 << -->
+            <!-- é só copiar e colar o dialog 1 completo e colar depois da tag de fechamento e mudar o que for necessario -->
+            <p:dialog header="Contratante" widgetVar="dlg1" >
                 <h:form id="form">
                     <p:growl id="msgs" showDetail="true" />
                     <p:dataTable id="dtContratantes" var="contratante" widgetVar="contratanteTable"
@@ -77,7 +75,7 @@
                                 <p:inputText id="globalFilter" onkeyup="PF('contratanteTable').filter()" style="width:150px" placeholder="Pressione uma tecla"/>
                             </p:outputPanel>
                         </f:facet>
-                        
+
                         <p:column headerText="ID">
                             <h:outputText value="#{contratante.id}"/>
                         </p:column>
@@ -118,8 +116,69 @@
                         </p:button>
                     </p>
                 </div>
-            </div>
 
+            </p:dialog>
+            
+            <!-- a partir daqui começa o dialog 1 chamado como >>> dlg2 <<< . é preciso mudar o header do dialog para o respectivo nome -->
+            <p:dialog header="Evento" widgetVar="dlg2" >
+                <!-- Precisa mudar o ID do form, como esta no exemplo abaixo e  -->
+                <h:form id="form2">
+                    <p:growl id="msgs" showDetail="true" />
+                    <p:dataTable id="dtContratantes" var="contratante" widgetVar="contratanteTable"
+                                 value="#{listarContratanteBean.contratantes}"
+                                 paginator="true" rows="5"
+                                 emptyMessage="sem registros"
+                                 paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                 rowsPerPageTemplate="5,10,15">
+                        <f:facet name="header">
+                            <p:outputPanel>
+                                <h:outputText value="Pesquisar em todos os campos:" />
+                                <p:inputText id="globalFilter" onkeyup="PF('contratanteTable').filter()" style="width:150px" placeholder="Pressione uma tecla"/>
+                            </p:outputPanel>
+                        </f:facet>
+
+                        <p:column headerText="ID">
+                            <h:outputText value="#{contratante.id}"/>
+                        </p:column>
+                        <p:column headerText="Nome" sortBy="#{contratante.nome}"
+                                  filterBy="#{contratante.nome}" filterMatchMode="contains">
+                            <h:outputText value="#{contratante.nome}"/>
+                        </p:column>
+                        <p:column headerText="Cpf">
+                            <h:outputText value="#{contratante.cpf}"/>
+                        </p:column>
+                        <p:column headerText="Endereco" filterBy="#{contratante.endereco}" filterMatchMode="exact">
+                            <f:facet name="filter">
+                                <p:selectOneMenu onchange="PF('contratanteTable').filter()" >
+                                    <f:selectItem itemLabel="Selecione um" itemValue="#{null}" noSelectionOption="true" />
+                                    <f:selectItems value="#{listarContratanteBean.enderecos}" />
+                                </p:selectOneMenu>
+                            </f:facet>
+                            <h:outputText value="#{contratante.endereco}"/>
+                        </p:column>
+                        <f:facet name="footer">
+                            No total temos #{listarContratanteBean.contratantes.size()} Contratantes.
+                        </f:facet>
+                    </p:dataTable>
+
+                </h:form>
+                <div class="buttonsControl">
+                    <p>
+                        <p:button  value="Cadastrar">
+
+                        </p:button>
+
+                        <p:button  value="Editar">
+
+                        </p:button>
+
+                        <p:button  value="Excluir">
+
+                        </p:button>
+                    </p>
+                </div>
+
+            </p:dialog>
         </div>
     </h:body>
 </html>

@@ -13,15 +13,21 @@
         <div id="nav">
             <div id="nav-wrapper">
                 <ul>
-                    <li><a href="#home" >Home</a></li>
-                    <li><a href="#algo2">Algo 2</a></li>
-                    <li><a href="#">Algo 3</a></li>
-                    <li><a href="#login">LOGIN</a></li>
+                    <li><a href="index.jsf#home" >Home</a></li>
+                    <li><a href="index.jsf#algo2">Algo 2</a></li>
+                    <li><a href="index.#">Algo 3</a></li>
+                    <li><a href="index.jsf#login">LOGIN</a></li>
                 </ul>
             </div>
             <div class="i18n">
-                <img src="img/br.png" title="Português"/>
-                <img src="img/eua.png" title="Inglês"/>                
+                <h:form class="verticalAlign">
+                    <h:commandLink action="#{mbI18n.trocaIdioma('pt_BR')}" title="#{msg.sistema_idiomaPortugues}">
+                        <h:graphicImage class="displayed" value="img/br2.png" />
+                    </h:commandLink>
+                    <h:commandLink action="#{mbI18n.trocaIdioma('en_US')}" title="#{msg.sistema_idiomaIngles}">
+                        <h:graphicImage value="img/eua2.png" />
+                    </h:commandLink>
+                </h:form>
             </div>
         </div>
 

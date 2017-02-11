@@ -13,16 +13,16 @@
         <div id="nav">
             <div id="nav-wrapper">
                 <ul>
-                    <li><a href="#home" >Home</a></li>
+                    <li><a href="#home" >#{msg.home}</a></li>
                     <li><a href="#algo2">Algo 2</a></li>
                     <li><a href="#">Algo 3</a></li>
                     <li><a href="#login">LOGIN</a></li>
                 </ul>
             </div>
             <div class="i18n">
-                <h:form>
+                <h:form class="verticalAlign">
                     <h:commandLink action="#{mbI18n.trocaIdioma('pt_BR')}" title="#{msg.sistema_idiomaPortugues}">
-                        <h:graphicImage value="img/br2.png" />
+                        <h:graphicImage class="displayed" value="img/br2.png" />
                     </h:commandLink>
                     <h:commandLink action="#{mbI18n.trocaIdioma('en_US')}" title="#{msg.sistema_idiomaIngles}">
                         <h:graphicImage value="img/eua2.png" />
@@ -45,7 +45,7 @@
                 <div class="formulario">
                     <table class="tableCenter">
                         <tr>
-                            <td><label>USUARIO:</label></td>
+                            <td><label>#{msg.cadastroUsuario}:</label></td><!-- É necessario deixar os dois pontos direto no HTML, para manter o padrão >> : << -->
                         </tr>
                         <tr>
                             <td><input type="text"/></td>

@@ -89,13 +89,13 @@ body,html{
      
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-    position: relative;
+    width: 100%;
+/*    position: relative;
     top: 50%;
     box-shadow: 0px 0px 60px -10px rgba(0,0,0,0.6);
     -webkit-transform: translateY( -50% );
     -moz-transform: translateY( -50% );
-    transform: translateY( -50% );
+    transform: translateY( -50% );*/
 }
 
 .buttonsControl{
@@ -104,19 +104,14 @@ body,html{
 }
 
 .buttonsControl p{
-    width: 69%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
-.ui-button{
+.ui-button, a{
+    text-decoration: none;
     padding: 8px;
     margin: 1%;
     font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: bold;
     color: rgba(0,0,0,0.7);
-}
-
-.ui-datatable{
-    padding: 2%;
 }
