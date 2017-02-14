@@ -23,5 +23,23 @@ public class TelaMB {
      */
     public String getNomeModificado() {
         return nome;
+        /*
+        switch(valorEscolhido){
+            case 'participante':
+                break;
+            case 'realizador' :
+        }
+        
+        na tela
+        <h:selectOneMenu id="txt3" value="#{managerBean.valorEscolhido}" required="true" label="Text 3">
+                <f:selectItem itemLabel="Select One" itemValue="" noSelectionOption="true" />
+                <f:selectItem itemLabel="Option 1" itemValue="participante" />
+                <f:selectItem itemLabel="Option 2" itemValue="realizador" />
+        </h:selectOneMenu>
+        
+        
+        email : ifpisoftware3@gmail.com
+        senhas: gatinhosegatinhas
+        */
     }
 }
