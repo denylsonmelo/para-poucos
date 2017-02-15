@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
 /**
  * Classe com as especificações de Contratante.
@@ -22,10 +23,11 @@ import javax.persistence.Id;
  * @author Ruan Vinicios
  */
 @Entity // indica que objetos dessa classe se tornem "persistíveis" no banco de dados. 
+@SequenceGenerator(name = "SequenceContratante", allocationSize = 1, sequenceName = "contratante_id_seq")
 public class Contratante implements Serializable {
     
     @Id // indica que o atributo id é nossa chave primária.
-    @GeneratedValue(strategy = GenerationType.AUTO) //indica que a chave auto incrementada.
+    @GeneratedValue(generator = "SequenceContratante")
     private int id;
     
     private int cpf;
@@ -86,5 +88,10 @@ public class Contratante implements Serializable {
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Contratante{" + "id=" + id + ", cpf=" + cpf + ", nome=" + nome + ", endereco=" + endereco + '}';
     }
 }

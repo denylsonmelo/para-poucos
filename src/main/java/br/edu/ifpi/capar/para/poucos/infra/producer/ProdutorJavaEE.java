@@ -1,4 +1,4 @@
-package br.edu.ifpi.capar.para.poucos.producer;
+package br.edu.ifpi.capar.para.poucos.infra.producer;
 
 import javax.enterprise.inject.Produces;
 import javax.persistence.EntityManager;

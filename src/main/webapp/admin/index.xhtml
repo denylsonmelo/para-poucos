@@ -58,6 +58,20 @@
             </h:form>
         </div>
         <div class="right">
+        
+            <h:form>
+                <p:panelGrid columns="2">
+                    <h:outputLabel value="Cpf:"/>
+                    <p:inputText value="#{mbCadastrarContratante.contratante.cpf}" placeholder="Coloque o cpf" />
+                    <h:outputLabel value="Nome:"/>
+                    <p:inputText value="#{mbCadastrarContratante.contratante.nome}" placeholder="Coloque o nome" />
+                    <h:outputLabel value="Endereço:"/>
+                    <p:inputText value="#{mbCadastrarContratante.contratante.endereco}" placeholder="Coloque o endereço" />
+                    <p:commandButton value="Cadastrar" action="#{mbCadastrarContratante.cadastrar()}"/>
+                </p:panelGrid>
+            </h:form>
+        
+        
             <!-- a partir daqui começa o dialog 1 chamado como >> dlg1 << -->
             <!-- é só copiar e colar o dialog 1 completo e colar depois da tag de fechamento e mudar o que for necessario -->
             <p:dialog header="Contratante" widgetVar="dlg1" >

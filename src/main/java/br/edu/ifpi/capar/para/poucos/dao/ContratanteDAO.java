@@ -6,6 +6,7 @@ import java.util.List;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
 
 /**
  *
@@ -28,6 +29,7 @@ public class ContratanteDAO {
         return query.getResultList();
     }
     
+    @Transactional
     public void cadastrar(Contratante contratante){
         em.persist(contratante);
     }
