@@ -9,43 +9,31 @@
 
     <ui:define name="conteudo">
         <div class="centerX_Y">
-            <p class="labelSpan">Contratante</p>
-            <h:form id="form">
+            <p class="labelSpan">Inscrições</p>
+            <h:form id="form3" >
                 <p:growl id="msgs" showDetail="true" />
-                <p:dataTable id="dtContratantes" var="contratante" widgetVar="contratanteTable"
-                             value="#{listarContratanteBean.contratantes}"
+                <p:dataTable id="dtInscricoes" var="evento" widgetVar="inscricoesTable"
+                             value="#{listarInscricoesBean.inscricoes}"
                              paginator="true" rows="5"
-                             emptyMessage="sem registros"
+                             emptyMessage="sem registros" paginatorPosition="bottom"
                              paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                              rowsPerPageTemplate="5,10,15">
                     <f:facet name="header">
                         <p:outputPanel>
                             <h:outputText value="Pesquisar em todos os campos:" />
-                            <p:inputText id="globalFilter" onkeyup="PF('contratanteTable').filter()" style="width:150px" placeholder="Pressione uma tecla"/>
+                            <p:inputText id="globalFilter" onkeyup="PF('inscricoesTable').filter()" style="width:150px" placeholder="Pressione uma tecla"/>
                         </p:outputPanel>
                     </f:facet>
 
-                    <p:column headerText="ID">
-                        <h:outputText value="#{contratante.id}"/>
+                    <p:column headerText="Numero">
+                        <h:outputText value="#{evento.numero}"/>
                     </p:column>
-                    <p:column headerText="Nome" sortBy="#{contratante.nome}"
-                              filterBy="#{contratante.nome}" filterMatchMode="contains">
-                        <h:outputText value="#{contratante.nome}"/>
-                    </p:column>
-                    <p:column headerText="Cpf">
-                        <h:outputText value="#{contratante.cpf}"/>
-                    </p:column>
-                    <p:column headerText="Endereco" filterBy="#{contratante.endereco}" filterMatchMode="exact">
-                        <f:facet name="filter">
-                            <p:selectOneMenu onchange="PF('contratanteTable').filter()" >
-                                <f:selectItem itemLabel="Selecione um" itemValue="#{null}" noSelectionOption="true" />
-                                <f:selectItems value="#{listarContratanteBean.enderecos}" />
-                            </p:selectOneMenu>
-                        </f:facet>
-                        <h:outputText value="#{contratante.endereco}"/>
+                    <p:column headerText="Participante" sortBy="#{evento.participante}"
+                              filterBy="#{evento.participante}" filterMatchMode="contains">
+                        <h:outputText value="#{evento.participante}"/>
                     </p:column>
                     <f:facet name="footer">
-                        No total temos #{listarContratanteBean.contratantes.size()} Contratantes.
+                        No total temos #{listarInscricoesBean.inscricoes.size()} Eventos.
                     </f:facet>
                 </p:dataTable>
 

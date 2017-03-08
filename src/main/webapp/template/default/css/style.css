@@ -86,16 +86,16 @@ body,html{
     background-color: #FFF;
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 5px;
-     
+
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-/*    position: relative;
-    top: 50%;
-    box-shadow: 0px 0px 60px -10px rgba(0,0,0,0.6);
-    -webkit-transform: translateY( -50% );
-    -moz-transform: translateY( -50% );
-    transform: translateY( -50% );*/
+    /*    position: relative;
+        top: 50%;
+        box-shadow: 0px 0px 60px -10px rgba(0,0,0,0.6);
+        -webkit-transform: translateY( -50% );
+        -moz-transform: translateY( -50% );
+        transform: translateY( -50% );*/
 }
 
 .buttonsControl{
@@ -116,8 +116,51 @@ body,html{
     color: rgba(0,0,0,0.7);
 }
 
-.ui-dialog{
+.centerX_Y{
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 10%;
+    width: 80%;
+    position: relative;
+    top: 45%;
+
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0px 0px 100px 1px rgba(217,195,217,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(217,195,217,1);
+    box-shadow: 0px 0px 15px 0px rgba(217,195,217,1);
 }
 
-.ui-dialog-content{
+.labelSpan{
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+    padding-left: 2%;
+    padding-bottom: 0.6%;
+}
+
+.i18nAdmin{
+    float: right;
+    padding-top: 1%;
+    padding-right: 1%;
+    width: 10%;
+   
+}
+.i18nAdmin{
+    float: right;
+    padding-top: 1%;
+    padding-right: 1%;
+    width: 10%;
+   
+}
+
+img:hover{
+    border: 1px solid #888;
 }

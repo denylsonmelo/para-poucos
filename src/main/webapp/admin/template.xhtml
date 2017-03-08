@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"  
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>#{msg.sistema_nome} - #{msg.sistema_apresentacao}</title>
+        <link rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/template/default/css/style.css"/>
+    </h:head>
+    <h:body>
+        <div class="left">
+            <p  class="gerenciamento">
+                Gerenciamento
+            </p>
+
+            <h:form>
+                <p:growl id="growl" life="2000" />
+                <p class="titleTableDB">
+                    <p:link outcome="index" value="Contratante"></p:link>
+                </p>
+
+                <p class="titleTableDB">
+                    <p:link outcome="evento" value="Eventos"></p:link>
+                </p>
+
+                <p class="titleTableDB">
+                    <p:link outcome="inscricao" value="Inscrição"></p:link>
+                </p>
+
+                <p class="titleTableDB">
+                    <p:link outcome="local" value="Locais"></p:link>
+                </p>
+
+                <p class="titleTableDB">
+                    <p:link outcome="organizador" value="Organizadores"></p:link>
+                </p>
+
+                <p class="titleTableDB">
+                    <p:link outcome="participante" value="Participantes"></p:link>
+                </p>
+
+                <p class="titleTableDB">
+                    <a href="../index.jsf">Sair</a>
+                </p>
+
+            </h:form>
+        </div>
+        <div class="right">
+            <div class="i18nAdmin">
+
+                <h:form class="verticalAlign">
+                    <h:commandLink action="#{mbI18n.trocaIdioma('pt_BR')}" title="#{msg.sistema_idiomaPortugues}">
+                        <h:graphicImage class="displayed" value="../img/br2.png" />
+                    </h:commandLink>
+                    <h:commandLink action="#{mbI18n.trocaIdioma('en_US')}" title="#{msg.sistema_idiomaIngles}">
+                        <h:graphicImage value="../img/eua2.png" />
+                    </h:commandLink>
+                </h:form>
+
+            </div>
+
+            <ui:insert name="conteudo">
+
+            </ui:insert>
+        </div>
+    </h:body>
+</html>
