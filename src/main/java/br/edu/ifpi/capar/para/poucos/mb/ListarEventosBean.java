@@ -23,7 +23,6 @@ public class ListarEventosBean {
     @PostConstruct
     private void init(){
         this.eventos = dao.buscarTodos();
-        int name = 10/0;
     }
     
     public List<Evento> getEventos() {

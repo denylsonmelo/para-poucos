@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Página de login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h1>pagina de login</h1>
+        <form method="POST" action="${request.getContextPath()}/j_security_check">
+            <div>
+                <label for="email">email</label>
+                <input type="text" name="j_username" value="${param.j_username}" id="email" />
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" name="j_password" value="${param.j_password}" id="senha" />
+            </div>
+            <input type="submit" value="Login"/>
+        </form>
+    </body>
+</html>

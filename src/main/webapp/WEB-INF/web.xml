@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/login.xhtml</form-login-page>
+            <form-error-page>/login.xhtml</form-error-page>
+        </form-login-config>
+    </login-config>
+    
+    <security-constraint>
+        <display-name>Protecao de Administracao</display-name>
+        <web-resource-collection>
+            <web-resource-name>administracao</web-resource-name>
+            <description>url da parte protegida do sistema</description>
+            <url-pattern>/admin/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+            <http-method>PUT</http-method>
+            <http-method>DELETE</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>usuarios que sao admin podem entrar</description>
+            <role-name>ADMIN</role-name>
+        </auth-constraint>
+    </security-constraint>
+    
+    <security-role>
+        <description>colecao de tipos de usuarios</description>
+        <role-name>ADMIN</role-name>
+        <role-name>COMUM</role-name>
+        <role-name>VISITANTE</role-name>
+    </security-role>
+    
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>XHTML</web-resource-name>
+            <url-pattern>*.xhtml</url-pattern>
+        </web-resource-collection>
+        <auth-constraint/>
+    </security-constraint>
+    
+    <error-page>
+        <error-code>403</error-code>
+        <location>/403.xhtml</location>
+    </error-page>
     <error-page>
         <error-code>404</error-code>
         <location>/404.xhtml</location>
@@ -8,8 +52,7 @@
     <error-page>
         <error-code>500</error-code>
         <location>/500.xhtml</location>
-    </error-page>
-    
+    </error-page>    
     
     <context-param>
         <param-name>javax.faces.PROJECT_STAGE</param-name>
@@ -36,13 +79,5 @@
     <welcome-file-list>
         <welcome-file>index.jsf</welcome-file>
     </welcome-file-list>
-    
-    <security-constraint>
-        <web-resource-collection>
-            <web-resource-name>XHTML</web-resource-name>
-            <url-pattern>*.xhtml</url-pattern>
-        </web-resource-collection>
-        <auth-constraint/>
-    </security-constraint>
-    
+        
 </web-app>

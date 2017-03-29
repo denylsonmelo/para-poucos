@@ -15,6 +15,11 @@
     </properties>
     
     <dependencies>
+        <dependency>
+            <groupId>org.jboss.security</groupId>
+            <artifactId>jbosssx</artifactId>
+            <version>3.0.0.Beta4</version>
+        </dependency>
         <dependency>  
             <groupId>org.primefaces</groupId>  
             <artifactId>primefaces</artifactId>  
@@ -56,6 +61,12 @@
             <id>prime-repo</id>  
             <name>PrimeFaces Maven Repository</name>  
             <url>http://repository.primefaces.org</url>  
+            <layout>default</layout>  
+        </repository>
+        <repository>  
+            <id>jboss-release-repo</id>  
+            <name>JBoss Releases Repository</name>  
+            <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>  
             <layout>default</layout>  
         </repository>
     </repositories>
