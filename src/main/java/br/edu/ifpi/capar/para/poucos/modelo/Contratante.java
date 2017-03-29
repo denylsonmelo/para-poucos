@@ -30,21 +30,21 @@ public class Contratante implements Serializable {
     @GeneratedValue(generator = "SequenceContratante")
     private int id;
     
-    private int cpf;
+    private String cpf;
     private String nome;
     private String endereco;
 
     /**
      * @return retorna o numero de cpf do Contratante.
      */
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
     /**
      * @param cpf recebe o cpf do Contratante.
      */
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
