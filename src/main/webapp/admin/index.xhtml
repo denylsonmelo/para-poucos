@@ -9,12 +9,12 @@
 
     <ui:define name="conteudo">
         <div class="centerX_Y">
-            
+
             <div>
                 bem vindo, #{usuarioLogado.get().nome}
                 #{usuarioLogado.get().email}
             </div>
-            
+
             <p class="labelSpan">Contratante</p>
             <h:form id="form">
                 <p:growl id="msgs" showDetail="true" />
@@ -50,6 +50,9 @@
                         </f:facet>
                         <h:outputText value="#{contratante.endereco}"/>
                     </p:column>
+                    <p:column>
+                        <p:button outcome="/admin/index3.jsf?id=#{contratante.id}" icon="ui-icon-pencil"/>
+                    </p:column>
                     <f:facet name="footer">
                         No total temos #{listarContratanteBean.contratantes.size()} Contratantes.
                     </f:facet>
@@ -58,17 +61,7 @@
             </h:form>
             <div class="buttonsControl">
                 <p>
-                    <p:button  value="Cadastrar">
-
-                    </p:button>
-
-                    <p:button  value="Editar">
-
-                    </p:button>
-
-                    <p:button  value="Excluir">
-
-                    </p:button>
+                    <p:button outcome="index2" value="Cadastrar"/>
                 </p>
             </div>
 

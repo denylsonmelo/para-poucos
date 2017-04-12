@@ -1,36 +1,42 @@
 package br.edu.ifpi.capar.para.poucos.dao;
 
 import br.edu.ifpi.capar.para.poucos.modelo.Contratante;
-import java.util.Arrays;
+import java.io.Serializable;
 import java.util.List;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
-import javax.transaction.Transactional;
 
 /**
  *
  * @author Denylson Melo
  */
-public class ContratanteDAO {
+public class ContratanteDAO implements Serializable{
 
     @Inject
-    private EntityManager em;
+    private EntityManager manager;
 
-    public List<Contratante> buscarTodos(){
-        TypedQuery<Contratante> query = em.
+    public List<Contratante> buscarTodos() {
+        TypedQuery<Contratante> query = manager.
                 createQuery("select c from Contratante c", Contratante.class);
         return query.getResultList();
     }
-    
-    public List<String> buscarEnderecos(){
-        TypedQuery<String> query = em.
+
+    public List<String> buscarEnderecos() {
+        TypedQuery<String> query = manager.
                 createQuery("select c.endereco from Contratante c group by c.endereco order by c.endereco asc", String.class);
         return query.getResultList();
     }
-    
-    @Transactional
-    public void cadastrar(Contratante contratante){
-        em.persist(contratante);
+
+    public void cadastrar(Contratante contratante) {
+        manager.persist(contratante);
+    }
+
+    public Contratante buscarPorId(int id) {
+        return manager.find(Contratante.class, id);
+    }
+
+    public void atualizar(Contratante contratante) {
+        manager.persist(contratante);
     }
 }

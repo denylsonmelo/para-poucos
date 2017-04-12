@@ -4,36 +4,39 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html"  
                 xmlns:p="http://primefaces.org/ui"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-                xmlns:stella="http://stella.caelum.com.br/faces2"
-                template="template.xhtml">
+                template="template.xhtml"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <f:metadata>
+        <f:viewParam value="#{carregarContratanteBean.id}" name="id"/>
+        <f:viewAction action="#{carregarContratanteBean.carregarContratante()}"/>
+    </f:metadata>
 
     <ui:define name="conteudo">
         <h:form prependId="false">
             <p:messages showDetail="true" showIcon="false"/>
             <p:panelGrid columns="3">
                 <h:outputLabel for="cpf" value="Cpf:"/>
-                <p:inputMask id="cpf" value="#{mbCadastrarContratante.contratante.cpf}" 
-                             mask="999.999.999-99" slotChar=" "
-                             required="true" requiredMessage="Por favor coloque o cpf"
-                             placeholder="Coloque o cpf" >
-                    <stella:validateCPF formatted="true"/>
-                </p:inputMask>
+                <p:inputText id="cpf" value="#{carregarContratanteBean.contratante.cpf}" 
+                             disabled="true" readonly="true"/>
                 <p:message for="cpf"/>
-                
+
                 <h:outputLabel value="Nome:"/>
-                <p:inputText id="nome" value="#{mbCadastrarContratante.contratante.nome}" 
+                <p:inputText id="nome" value="#{carregarContratanteBean.contratante.nome}" 
                              required="true" requiredMessage="Por favor coloque o nome"
                              placeholder="Coloque o nome" />
                 <p:message for="nome"/>
-                
+
                 <h:outputLabel value="Endereço:"/>
-                <p:inputText id="endereco" value="#{mbCadastrarContratante.contratante.endereco}" 
+                <p:inputText id="endereco" value="#{carregarContratanteBean.contratante.endereco}" 
                              required="true" requiredMessage="Por favor coloque o endereço"
                              placeholder="Coloque o endereço" />
                 <p:message for="endereco"/>
 
-                <p:commandButton value="Cadastrar" update="@form"
-                                 action="#{mbCadastrarContratante.cadastrar()}"/>
+
+                <p:commandButton value="Atualizar" update="@form"
+                                 action="#{carregarContratanteBean.atualizar()}"/>
+                
             </p:panelGrid>
         </h:form>
     </ui:define>
