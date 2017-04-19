@@ -1,6 +1,7 @@
 package br.edu.ifpi.capar.para.poucos.mb;
 
 import br.edu.ifpi.capar.para.poucos.dao.ContratanteDAO;
+import br.edu.ifpi.capar.para.poucos.infra.constant.FacesConstant;
 import br.edu.ifpi.capar.para.poucos.modelo.Contratante;
 import java.io.Serializable;
 import javax.enterprise.context.Conversation;
@@ -25,25 +26,23 @@ public class CarregarContratanteBean implements Serializable {
     private ContratanteDAO dao;
     @Inject
     private FacesContext context;
-    @Inject
-    private Conversation conversation;
 
     @Transactional
     public void atualizar() {
-        dao.cadastrar(contratante);
+        dao.atualizar(contratante);
         context.addMessage(null,
                 new FacesMessage(FacesMessage.SEVERITY_INFO, "Cadastro atualizado", "Cadastro muito bem atualizado"));
+    }
 
-        if (!conversation.isTransient()) {
-            conversation.end();
-        }
+    @Transactional
+    public String excluir() {
+        dao.excluir(contratante);
+        context.addMessage(null,
+                new FacesMessage(FacesMessage.SEVERITY_INFO, "Cadastro excluido", "Cadastro muito bem excluido"));
+        return "index" + "?" + FacesConstant.FACES_REDIRECT;
     }
 
     public void carregarContratante() {
-        if (conversation.isTransient()) {
-            conversation.begin();
-        }
-
         this.contratante = dao.buscarPorId(this.id);
     }
 

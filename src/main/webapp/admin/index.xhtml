@@ -52,6 +52,9 @@
                     </p:column>
                     <p:column>
                         <p:button outcome="/admin/index3.jsf?id=#{contratante.id}" icon="ui-icon-pencil"/>
+                        <p:commandButton action="#{listarContratanteBean.excluir()}" icon="ui-icon-trash">
+                            <f:setPropertyActionListener value="#{contratante}" target=""/>
+                        </p:commandButton>
                     </p:column>
                     <f:facet name="footer">
                         No total temos #{listarContratanteBean.contratantes.size()} Contratantes.

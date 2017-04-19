@@ -34,6 +34,9 @@
                 <p:message for="endereco"/>
 
 
+                <p:button value="Cancelar" outcome="/admin/index.jsf"/>
+                <p:commandButton value="Excluir" update="@form"
+                                 action="#{carregarContratanteBean.excluir()}"/>
                 <p:commandButton value="Atualizar" update="@form"
                                  action="#{carregarContratanteBean.atualizar()}"/>
                 

@@ -19,7 +19,12 @@ public class ListarContratanteBean {
     @Inject
     private ContratanteDAO dao;
     private List<Contratante> contratantes;
-
+    private Contratante contratanteSelecionado;
+    
+    public void excluir(){
+        dao.excluir(contratanteSelecionado);
+    }
+    
     @PostConstruct
     private void init(){
         this.contratantes = dao.buscarTodos();

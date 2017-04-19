@@ -37,6 +37,10 @@ public class ContratanteDAO implements Serializable{
     }
 
     public void atualizar(Contratante contratante) {
-        manager.persist(contratante);
+        manager.merge(contratante);
+    }
+
+    public void excluir(Contratante contratante) {
+        manager.remove(manager.contains(contratante) ? contratante : manager.merge(contratante));
     }
 }
