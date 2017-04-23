@@ -4,7 +4,7 @@
              xmlns:h="http://java.sun.com/jsf/html"    
              xmlns:p="http://primefaces.org/ui"
              xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-             template="template.xhtml"
+             template="/template/default/admin.xhtml"
              xmlns:f="http://xmlns.jcp.org/jsf/core">  
 
     <ui:define name="conteudo">
@@ -51,7 +51,7 @@
                         <h:outputText value="#{contratante.endereco}"/>
                     </p:column>
                     <p:column>
-                        <p:button outcome="/admin/index3.jsf?id=#{contratante.id}" icon="ui-icon-pencil"/>
+                        <p:button outcome="/admin/contratante/carregar.jsf?id=#{contratante.id}" icon="ui-icon-pencil"/>
                         <p:commandButton action="#{listarContratanteBean.excluir()}" icon="ui-icon-trash">
                             <f:setPropertyActionListener value="#{contratante}" target=""/>
                         </p:commandButton>
@@ -64,7 +64,7 @@
             </h:form>
             <div class="buttonsControl">
                 <p>
-                    <p:button outcome="index2" value="Cadastrar"/>
+                    <p:button outcome="cadastrar" value="Cadastrar"/>
                 </p>
             </div>
 

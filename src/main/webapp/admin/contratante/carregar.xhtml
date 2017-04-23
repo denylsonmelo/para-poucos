@@ -4,7 +4,7 @@
                 xmlns:h="http://xmlns.jcp.org/jsf/html"  
                 xmlns:p="http://primefaces.org/ui"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-                template="template.xhtml"
+                template="/template/default/admin.xhtml"
                 xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <f:metadata>
@@ -37,7 +37,7 @@
                 <p:defaultCommand target="btnAtualizar"/>
                 <h:outputLabel/>
                 <h:outputLabel/>
-                <p:button value="Listar" outcome="/admin/index.jsf"/>
+                <p:button value="Listar" outcome="/admin/contratante/index.jsf"/>
                 <p:commandButton value="Excluir" update="@form"
                                  action="#{carregarContratanteBean.excluir()}"/>
                 <p:commandButton id="btnAtualizar" value="Atualizar" update="@form"
