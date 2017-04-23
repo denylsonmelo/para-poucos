@@ -2,10 +2,9 @@ package br.edu.ifpi.capar.para.poucos.mb;
 
 import br.edu.ifpi.capar.para.poucos.infra.mail.EnviadorDeEmail;
 import br.edu.ifpi.capar.para.poucos.dao.ContratanteDAO;
+import br.edu.ifpi.capar.para.poucos.infra.message.MessageUtils;
 import br.edu.ifpi.capar.para.poucos.modelo.Contratante;
 import javax.enterprise.context.RequestScoped;
-import javax.faces.application.FacesMessage;
-import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.transaction.Transactional;
@@ -24,7 +23,7 @@ public class CadastrarContratanteBean {
     @Inject
     private EnviadorDeEmail enviadorDeEmail;
     @Inject
-    private FacesContext context;
+    private MessageUtils message;
     
     @Transactional
     public void cadastrar(){
@@ -34,8 +33,7 @@ public class CadastrarContratanteBean {
                 "anaflaviasabinoalburquerque@gmail.com", 
                 "Contratante cadastrado", "Você foi cadastrado, uhu!!!");
         */
-        context.addMessage(null, 
-                new FacesMessage(FacesMessage.SEVERITY_INFO, "Cadastro feito", "Cadastro muito bem feito"));
+        message.adicionarInformacao("Cadastro feito", "Cadastro muito bem feito");
     }
 
     public Contratante getContratante() {

@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
  *
  * @author Denylson Melo
  */
-public class ProdutorJavaEE {
+public class JPAProducer {
 
     @PersistenceContext(unitName = "para-poucosPU")
     @Produces 

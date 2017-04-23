@@ -2,10 +2,9 @@ package br.edu.ifpi.capar.para.poucos.mb;
 
 import br.edu.ifpi.capar.para.poucos.dao.ContratanteDAO;
 import br.edu.ifpi.capar.para.poucos.infra.constant.FacesConstant;
+import br.edu.ifpi.capar.para.poucos.infra.message.MessageUtils;
 import br.edu.ifpi.capar.para.poucos.modelo.Contratante;
 import java.io.Serializable;
-import javax.faces.application.FacesMessage;
-import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.transaction.Transactional;
@@ -24,20 +23,18 @@ public class CarregarContratanteBean implements Serializable {
     @Inject
     private ContratanteDAO dao;
     @Inject
-    private FacesContext context;
+    private MessageUtils message;
     
     @Transactional
     public void atualizar() {
         dao.atualizar(contratante);
-        context.addMessage(null,
-                new FacesMessage(FacesMessage.SEVERITY_INFO, "Cadastro atualizado", "Cadastro muito bem atualizado"));
+        message.adicionarInformacao("Cadastro atualizado");
     }
 
     @Transactional
     public String excluir() {
-        dao.excluir(contratante);
-        context.addMessage(null,
-                new FacesMessage(FacesMessage.SEVERITY_INFO, "Cadastro excluido", "Cadastro muito bem excluido"));
+        //dao.excluir(contratante);
+        message.adicionarInformacao("Cadastro excluido").persistente();
         return "index" + "?" + FacesConstant.FACES_REDIRECT;
     }
 
