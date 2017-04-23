@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:decorate xmlns="http://www.w3.org/1999/xhtml"  
+             xmlns:h="http://java.sun.com/jsf/html"    
+             xmlns:p="http://primefaces.org/ui"
+             xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+             template="/template/default/admin.xhtml"
+             xmlns:f="http://xmlns.jcp.org/jsf/core">  
+
+    <ui:define name="conteudo">
+        <h:form prependId="false">
+            <p:messages showDetail="true" showIcon="false"/>
+            
+            <p:selectOneMenu id="slctContratante" value="#{exemploConverterContratanteBean.contratanteSelecionado}" converter="ContratanteConverter">
+                <p:ajax event="change" process="slctContratante" update="lblContratante" ></p:ajax>
+                <f:selectItem itemLabel="--- Selecione ---" noSelectionOption="true" itemValue=""/>                        
+                <f:selectItems value="#{exemploConverterContratanteBean.contratantes}"
+                               var="contratante" itemValue="#{contratante}" itemLabel="#{contratante.nome}"/>
+            </p:selectOneMenu>
+
+           
+            <br/>
+            <br/>
+            <br/>
+            <h:outputLabel value="Deve ser implementado o equals e hascode da entidade"/>
+            <br/>
+            <br/>
+            <h:outputLabel id="lblContratante" value="#{exemploConverterContratanteBean.contratanteSelecionado}"/>
+        </h:form>
+    </ui:define>
+</ui:decorate>  
+

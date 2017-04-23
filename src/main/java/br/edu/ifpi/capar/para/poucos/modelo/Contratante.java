@@ -94,4 +94,29 @@ public class Contratante implements Serializable {
     public String toString() {
         return "Contratante{" + "id=" + id + ", cpf=" + cpf + ", nome=" + nome + ", endereco=" + endereco + '}';
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 79 * hash + this.id;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Contratante other = (Contratante) obj;
+        if (this.id != other.id) {
+            return false;
+        }
+        return true;
+    }
 }
