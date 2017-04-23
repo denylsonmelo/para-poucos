@@ -34,10 +34,13 @@
                 <p:message for="endereco"/>
 
 
-                <p:button value="Cancelar" outcome="/admin/index.jsf"/>
+                <p:defaultCommand target="btnAtualizar"/>
+                <h:outputLabel/>
+                <h:outputLabel/>
+                <p:button value="Listar" outcome="/admin/index.jsf"/>
                 <p:commandButton value="Excluir" update="@form"
                                  action="#{carregarContratanteBean.excluir()}"/>
-                <p:commandButton value="Atualizar" update="@form"
+                <p:commandButton id="btnAtualizar" value="Atualizar" update="@form"
                                  action="#{carregarContratanteBean.atualizar()}"/>
                 
             </p:panelGrid>

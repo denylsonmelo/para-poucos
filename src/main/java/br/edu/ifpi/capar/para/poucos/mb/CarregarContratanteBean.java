@@ -4,7 +4,6 @@ import br.edu.ifpi.capar.para.poucos.dao.ContratanteDAO;
 import br.edu.ifpi.capar.para.poucos.infra.constant.FacesConstant;
 import br.edu.ifpi.capar.para.poucos.modelo.Contratante;
 import java.io.Serializable;
-import javax.enterprise.context.Conversation;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
@@ -26,7 +25,7 @@ public class CarregarContratanteBean implements Serializable {
     private ContratanteDAO dao;
     @Inject
     private FacesContext context;
-
+    
     @Transactional
     public void atualizar() {
         dao.atualizar(contratante);
